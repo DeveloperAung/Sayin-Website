@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 844" width="390" height="844" style="background:#071E19; font-family:'Noto Sans Myanmar', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <linearGradient id="accCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E332B"/>
+      <stop offset="100%" stop-color="#08221D"/>
+    </linearGradient>
+  </defs>
+
+  <!-- iOS Status Bar -->
+  <text x="36" y="38" fill="#F2EBDD" font-size="15" font-weight="600">9:24</text>
+  <rect x="130" y="14" width="130" height="32" rx="16" fill="#000"/>
+  <g transform="translate(325, 26)" fill="#F2EBDD">
+    <path d="M 0 10 L 3 10 L 3 14 L 0 14 Z M 5 7 L 8 7 L 8 14 L 5 14 Z M 10 4 L 13 4 L 13 14 L 10 14 Z M 15 1 L 18 1 L 18 14 L 15 14 Z"/>
+    <rect x="24" y="2" width="22" height="12" rx="3" fill="none" stroke="#F2EBDD" stroke-width="1.5"/>
+    <rect x="26" y="4" width="16" height="8" rx="1.5" fill="#34D399"/>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(20, 100)">
+    <text x="0" y="0" fill="#F2EBDD" font-size="28" font-weight="700">အကောင့်</text>
+  </g>
+
+  <!-- Section 1: Backup (အရန်သိမ်းခြင်း) -->
+  <g transform="translate(20, 125)">
+    <line x1="0" y1="0" x2="0" y2="16" stroke="#34D399" stroke-width="3" stroke-linecap="round"/>
+    <text x="10" y="13" fill="#F2EBDD" font-size="16" font-weight="700">အရန်သိမ်းခြင်း</text>
+    <text x="350" y="13" text-anchor="end" fill="#758D84" font-size="12">သိမ်းထားနိုင်သော မိတ္တူ</text>
+
+    <!-- Card -->
+    <rect x="0" y="24" width="350" height="136" rx="18" fill="url(#accCardGrad)" stroke="rgba(212,178,106,0.18)" stroke-width="1"/>
+    
+    <!-- Row 1: Back up now -->
+    <rect x="16" y="38" width="38" height="38" rx="10" fill="#3D321A"/>
+    <!-- Vector backup cloud/down arrow icon -->
+    <path d="M 28 57 L 42 57 M 35 46 L 35 58 M 30 53 L 35 58 L 40 53" stroke="#D4B26A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <text x="66" y="54" fill="#F2EBDD" font-size="15" font-weight="600">အရန်သိမ်းရန်</text>
+    <text x="66" y="70" fill="#758D84" font-size="11.5">နောက်ဆုံး အရန်သိမ်းချိန်: ၂၀၂၆-၁၀-၁၆</text>
+    
+    <path d="M 324 53 L 330 57 L 324 61" stroke="#758D84" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <line x1="66" y1="92" x2="330" y2="92" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+    <!-- Row 2: Restore from backup -->
+    <rect x="16" y="104" width="38" height="38" rx="10" fill="#142B38"/>
+    <!-- Vector restore arrow circle icon -->
+    <path d="M 35 116 A 6.5 6.5 0 1 0 41.5 122.5 M 41.5 116 L 41.5 122.5 L 35 122.5" stroke="#60A5FA" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <text x="66" y="128" fill="#F2EBDD" font-size="15" font-weight="600">အရန်ဖိုင်မှ ပြန်ထည့်ရန်</text>
+    <path d="M 324 119 L 330 123 L 324 127" stroke="#758D84" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Backup Footnote -->
+  <g transform="translate(20, 312)">
+    <text x="0" y="0" fill="#758D84" font-size="11.5">ဤဖုန်းရှိ အားလုံး — အဖွဲ့များ၊ အသုံးစရိတ်များ၊ Wallet များနှင့်</text>
+    <text x="0" y="16" fill="#758D84" font-size="11.5">ပြေစာဓာတ်ပုံများ — ကို ဖိုင်တစ်ခုအဖြစ် သိမ်းဆည်းနိုင်ပါသည်။</text>
+  </g>
+
+  <!-- Section 2: Settings (ဆက်တင်များ) -->
+  <g transform="translate(20, 355)">
+    <line x1="0" y1="0" x2="0" y2="16" stroke="#34D399" stroke-width="3" stroke-linecap="round"/>
+    <text x="10" y="13" fill="#F2EBDD" font-size="16" font-weight="700">ဆက်တင်များ</text>
+    <text x="350" y="13" text-anchor="end" fill="#758D84" font-size="12">အခြေခံ ရွေးချယ်မှုများ</text>
+
+    <!-- Settings Card (330px high, 6 native iOS rows) -->
+    <rect x="0" y="24" width="350" height="330" rx="18" fill="url(#accCardGrad)" stroke="rgba(212,178,106,0.18)" stroke-width="1"/>
+
+    <!-- Row 1: Language (ဘာသာစကား) -->
+    <rect x="16" y="38" width="30" height="30" rx="8" fill="#0A84FF"/>
+    <!-- Vector Globe -->
+    <circle cx="31" cy="53" r="8" stroke="#FFF" stroke-width="1.3" fill="none"/>
+    <ellipse cx="31" cy="53" rx="4" ry="8" stroke="#FFF" stroke-width="1.3" fill="none"/>
+    <line x1="23" y1="53" x2="39" y2="53" stroke="#FFF" stroke-width="1.3"/>
+    
+    <text x="58" y="58" fill="#F2EBDD" font-size="14.5" font-weight="500">ဘာသာစကား</text>
+    
+    <rect x="250" y="42" width="58" height="22" rx="11" fill="#154238"/>
+    <text x="279" y="57" text-anchor="middle" fill="#34D399" font-size="12" font-weight="600">မြန်မာ</text>
+    <path d="M 324 51 L 330 55 L 324 59" stroke="#758D84" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+    <line x1="58" y1="78" x2="330" y2="78" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+    <!-- Row 2: Numbers (ဂဏန်းပုံစံ) -->
+    <rect x="16" y="92" width="30" height="30" rx="8" fill="#5E5CE6"/>
+    <!-- Vector Number Hash -->
+    <path d="M 27 99 L 26 115 M 34 99 L 33 115 M 23 104 L 37 104 M 22 110 L 36 110" stroke="#FFF" stroke-width="1.4" stroke-linecap="round"/>
+    
+    <text x="58" y="112" fill="#F2EBDD" font-size="14.5" font-weight="500">ဂဏန်းပုံစံ</text>
+    <text x="312" y="112" text-anchor="end" fill="#758D84" font-size="12.5">၁,၂,၃ (လက်တင်/မြန်မာ)</text>
+    <path d="M 324 105 L 330 109 L 324 113" stroke="#758D84" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+    <line x1="58" y1="132" x2="330" y2="132" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+    <!-- Row 3: Main Currency (အဓိက ငွေကြေး) -->
+    <rect x="16" y="146" width="30" height="30" rx="8" fill="#30D158"/>
+    <!-- Vector Currency Note -->
+    <rect x="22" y="154" width="18" height="14" rx="2" stroke="#FFF" stroke-width="1.3" fill="none"/>
+    <circle cx="31" cy="161" r="3" stroke="#FFF" stroke-width="1.3" fill="none"/>
+    
+    <text x="58" y="166" fill="#F2EBDD" font-size="14.5" font-weight="500">အဓိက ငွေကြေး</text>
+    
+    <rect x="254" y="150" width="54" height="22" rx="11" fill="#154238"/>
+    <text x="281" y="165" text-anchor="middle" fill="#34D399" font-size="12" font-weight="600">SGD</text>
+    <path d="M 324 159 L 330 163 L 324 167" stroke="#758D84" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+    <line x1="58" y1="186" x2="330" y2="186" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+    <!-- Row 4: Split method (ခွဲဝေမှု ပုံစံ) -->
+    <rect x="16" y="200" width="30" height="30" rx="8" fill="#FF9F0A"/>
+    <!-- Vector Balance Scale -->
+    <path d="M 31 206 L 31 223 M 24 210 L 38 210 M 24 210 L 21 217 L 27 217 Z M 38 210 L 35 217 L 41 217 Z" stroke="#FFF" stroke-width="1.2" fill="none" stroke-linejoin="round"/>
+    
+    <text x="58" y="220" fill="#F2EBDD" font-size="14.5" font-weight="500">ခွဲဝေမှု ပုံစံ</text>
+    <text x="312" y="220" text-anchor="end" fill="#758D84" font-size="12.5">ညီတူညီမျှ</text>
+    <path d="M 324 213 L 330 217 L 324 221" stroke="#758D84" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+    <line x1="58" y1="240" x2="330" y2="240" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+    <!-- Row 5: Default wallet (အဓိက Wallet) -->
+    <rect x="16" y="254" width="30" height="30" rx="8" fill="#BF5AF2"/>
+    <!-- Vector Wallet -->
+    <rect x="22" y="261" width="18" height="14" rx="3" stroke="#FFF" stroke-width="1.3" fill="none"/>
+    <path d="M 34 266 L 38 266 L 38 270 L 34 270 Z" fill="#FFF"/>
+    
+    <text x="58" y="274" fill="#F2EBDD" font-size="14.5" font-weight="500">အဓိက Wallet</text>
+    
+    <rect x="216" y="258" width="92" height="22" rx="11" fill="#242215" stroke="rgba(212,178,106,0.3)" stroke-width="1"/>
+    <text x="262" y="273" text-anchor="middle" fill="#D4B26A" font-size="11.5">မသတ်မှတ်ထားပါ</text>
+    <path d="M 324 267 L 330 271 L 324 275" stroke="#758D84" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+    <line x1="58" y1="294" x2="330" y2="294" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+    <!-- Row 6: Face ID Lock (အက်ပ် လုံခြုံရေး) with Native iOS Toggle Switch! -->
+    <rect x="16" y="306" width="30" height="30" rx="8" fill="#059669"/>
+    <!-- Vector Face ID/Biometric Lock -->
+    <rect x="24" y="316" width="14" height="12" rx="2" stroke="#FFF" stroke-width="1.3" fill="none"/>
+    <path d="M 27 316 L 27 312 C 27 309 35 309 35 312 L 35 316" stroke="#FFF" stroke-width="1.3" fill="none"/>
+    
+    <text x="58" y="324" fill="#F2EBDD" font-size="14.5" font-weight="500">Face ID ဖြင့် သော့ခတ်ခြင်း</text>
+    
+    <!-- Authentic iOS Green Toggle Switch (ON) -->
+    <g transform="translate(284, 310)">
+      <rect width="46" height="26" rx="13" fill="#10B981"/>
+      <circle cx="33" cy="13" r="11" fill="#FFFFFF" filter="drop-shadow(0 1px 2px rgba(0,0,0,0.3))"/>
+    </g>
+  </g>
+
+  <!-- Bottom Navigation Bar -->
+  <g transform="translate(0, 755)">
+    <rect width="390" height="89" fill="#07201A" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    
+    <!-- Tab 1: ပင်မ -->
+    <path d="M 30.5 19.5 L 39 12.5 L 47.5 19.5 L 47.5 27 C 47.5 27.8 46.8 28.5 46 28.5 L 32 28.5 C 31.2 28.5 30.5 27.8 30.5 27 Z" fill="none" stroke="#758D84" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 36.5 28.5 L 36.5 23.5 C 36.5 23 37 22.5 37.5 22.5 L 40.5 22.5 C 41 22.5 41.5 23 41.5 23.5 L 41.5 28.5" fill="none" stroke="#758D84" stroke-width="1.5" stroke-linejoin="round"/>
+    <text x="39" y="48" text-anchor="middle" fill="#758D84" font-size="10.5">ပင်မ</text>
+
+    <!-- Tab 2: အဖွဲ့များ -->
+    <g fill="none" stroke="#758D84" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="113" cy="14.5" r="3.2"/>
+      <path d="M 105.5 27.5 C 105.5 23.8 108.8 21.5 113 21.5 C 117.2 21.5 120.5 23.8 120.5 27.5"/>
+      <path d="M 119.5 12 A 2.6 2.6 0 1 1 123.5 16"/>
+      <path d="M 121.2 22.5 C 123.2 23.2 125 24.8 125 27.5"/>
+    </g>
+    <text x="117" y="48" text-anchor="middle" fill="#758D84" font-size="10.5">အဖွဲ့များ</text>
+
+    <!-- Tab 3: ထည့်ရန် (Add +) -->
+    <circle cx="195" cy="18" r="18" fill="#0B7963"/>
+    <path d="M 195 11 L 195 25 M 188 18 L 202 18" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"/>
+    <text x="195" y="48" text-anchor="middle" fill="#758D84" font-size="10.5">ထည့်ရန်</text>
+
+    <!-- Tab 4: မှတ်တမ်း -->
+    <g stroke="#758D84" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <rect x="266" y="10.5" width="14" height="17" rx="2.5"/>
+      <path d="M 269.5 15 L 276.5 15 M 269.5 19 L 276.5 19 M 269.5 23 L 273.5 23"/>
+    </g>
+    <text x="273" y="48" text-anchor="middle" fill="#758D84" font-size="10.5">မှတ်တမ်း</text>
+
+    <!-- Tab 5: အကောင့် (Active) -->
+    <rect x="327" y="6" width="48" height="26" rx="13" fill="#13473B"/>
+    <g fill="#34D399">
+      <circle cx="351" cy="14.5" r="3.6"/>
+      <path d="M 343 27.5 C 343 23.5 346.5 21 351 21 C 355.5 21 359 23.5 359 27.5 Z"/>
+    </g>
+    <text x="351" y="48" text-anchor="middle" fill="#34D399" font-size="10.5" font-weight="600">အကောင့်</text>
+
+    <!-- Home Indicator -->
+    <rect x="128" y="76" width="134" height="4.5" rx="2.25" fill="#FFFFFF" opacity="0.3"/>
+  </g>
+</svg>

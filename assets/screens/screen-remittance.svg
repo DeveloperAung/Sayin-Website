@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 844" width="390" height="844" style="background:#071E19; font-family:'Noto Sans Myanmar', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <linearGradient id="remitCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E332B"/>
+      <stop offset="100%" stop-color="#08221D"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4B26A"/>
+      <stop offset="100%" stop-color="#F3E5AB"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Status Bar -->
+  <text x="36" y="38" fill="#F2EBDD" font-size="15" font-weight="600">9:24</text>
+  <rect x="130" y="14" width="130" height="32" rx="16" fill="#000"/>
+  <g transform="translate(325, 26)" fill="#F2EBDD">
+    <path d="M 0 10 L 3 10 L 3 14 L 0 14 Z M 5 7 L 8 7 L 8 14 L 5 14 Z M 10 4 L 13 4 L 13 14 L 10 14 Z M 15 1 L 18 1 L 18 14 L 15 14 Z"/>
+    <rect x="24" y="2" width="22" height="12" rx="3" fill="none" stroke="#F2EBDD" stroke-width="1.5"/>
+    <rect x="26" y="4" width="16" height="8" rx="1.5" fill="#34D399"/>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(20, 100)">
+    <text x="0" y="0" fill="#F2EBDD" font-size="26" font-weight="700">အိမ်ပို့ငွေ မှတ်တမ်း</text>
+    <rect x="290" y="-22" width="60" height="28" rx="14" fill="#133D33" stroke="rgba(212,178,106,0.2)" stroke-width="1"/>
+    <text x="320" y="-4" text-anchor="middle" fill="#A7F3D0" font-size="12" font-weight="600">၂၀၂၆</text>
+  </g>
+
+  <!-- Annual Summary Card -->
+  <g transform="translate(20, 125)">
+    <rect width="350" height="135" rx="18" fill="url(#remitCardGrad)" stroke="rgba(212,178,106,0.22)" stroke-width="1"/>
+    
+    <text x="22" y="34" fill="#A3B8B0" font-size="13">ဤနှစ် ပို့ပြီးငွေ စုစုပေါင်း (2026)</text>
+    <text x="22" y="74" fill="url(#goldGrad)" font-size="28" font-weight="700">3,850.00 SGD</text>
+    
+    <line x1="22" y1="94" x2="328" y2="94" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    
+    <text x="22" y="118" fill="#C2D6CF" font-size="12">မြန်မာကျပ်ငွေ ရရှိမှု စုစုပေါင်း</text>
+    <text x="328" y="118" text-anchor="end" fill="#34D399" font-size="14" font-weight="600">~ 11,935,000 MMK</text>
+  </g>
+
+  <!-- Section Title -->
+  <g transform="translate(20, 290)">
+    <line x1="0" y1="0" x2="0" y2="16" stroke="#34D399" stroke-width="3" stroke-linecap="round"/>
+    <text x="10" y="13" fill="#F2EBDD" font-size="16" font-weight="700">လတ်တလော ငွေလွှဲမှုများ</text>
+    <text x="350" y="13" text-anchor="end" fill="#758D84" font-size="12">မှတ်တမ်း ၂ ခု</text>
+  </g>
+
+  <!-- Remittance Card 1 (Generous vertical spacing, NO text overlap) -->
+  <g transform="translate(20, 320)">
+    <rect width="350" height="175" rx="18" fill="url(#remitCardGrad)" stroke="rgba(212,178,106,0.18)" stroke-width="1"/>
+    
+    <!-- Top Row: Icon + Pair + Sent Amount -->
+    <rect x="18" y="18" width="36" height="36" rx="18" fill="#13473E"/>
+    <path d="M 31 36 L 41 36 M 38 32 L 42 36 L 38 40" stroke="#34D399" stroke-width="2" stroke-linecap="round"/>
+    
+    <text x="64" y="34" fill="#F2EBDD" font-size="15" font-weight="700">SGD → MMK</text>
+    <text x="64" y="52" fill="#758D84" font-size="11">၂၀၂၆ အောက်တိုဘာ ၂</text>
+
+    <text x="332" y="34" text-anchor="end" fill="#F87171" font-size="16" font-weight="700">-600.00 SGD</text>
+
+    <!-- Recipient & Received Row -->
+    <g transform="translate(18, 68)">
+      <rect width="314" height="42" rx="10" fill="#07231E"/>
+      <text x="12" y="26" fill="#D1E0DB" font-size="12.5" font-weight="500">လက်ခံသူ: ဒေါ်ခင်သန်းနွယ်</text>
+      <text x="302" y="26" text-anchor="end" fill="#34D399" font-size="13.5" font-weight="600">+1,860,000 MMK</text>
+    </g>
+
+    <!-- Details Row (Cleanly spaced) -->
+    <g transform="translate(18, 126)">
+      <text x="4" y="16" fill="#88A298" font-size="11.5">လဲလှယ်နှုန်း: 1 SGD = 3,100 MMK</text>
+      <text x="4" y="34" fill="#88A298" font-size="11.5">ဝန်ဆောင်ခ: 2.50 SGD</text>
+
+      <!-- Status Badge -->
+      <rect x="236" y="8" width="78" height="24" rx="12" fill="#154238" stroke="#34D399" stroke-width="0.8"/>
+      <text x="275" y="24" text-anchor="middle" fill="#A7F3D0" font-size="11.5" font-weight="600">အောင်မြင်</text>
+    </g>
+  </g>
+
+  <!-- Remittance Card 2 (Generous vertical spacing, NO text overlap) -->
+  <g transform="translate(20, 510)">
+    <rect width="350" height="175" rx="18" fill="url(#remitCardGrad)" stroke="rgba(212,178,106,0.18)" stroke-width="1"/>
+    
+    <!-- Top Row: Icon + Pair + Sent Amount -->
+    <rect x="18" y="18" width="36" height="36" rx="18" fill="#13473E"/>
+    <path d="M 31 36 L 41 36 M 38 32 L 42 36 L 38 40" stroke="#34D399" stroke-width="2" stroke-linecap="round"/>
+    
+    <text x="64" y="34" fill="#F2EBDD" font-size="15" font-weight="700">SGD → MMK</text>
+    <text x="64" y="52" fill="#758D84" font-size="11">၂၀၂၆ စက်တင်ဘာ ၁၅</text>
+
+    <text x="332" y="34" text-anchor="end" fill="#F87171" font-size="16" font-weight="700">-450.00 SGD</text>
+
+    <!-- Recipient & Received Row -->
+    <g transform="translate(18, 68)">
+      <rect width="314" height="42" rx="10" fill="#07231E"/>
+      <text x="12" y="26" fill="#D1E0DB" font-size="12.5" font-weight="500">လက်ခံသူ: မစုမြတ်နိုး (ပညာသင်စရိတ်)</text>
+      <text x="302" y="26" text-anchor="end" fill="#34D399" font-size="13.5" font-weight="600">+1,386,000 MMK</text>
+    </g>
+
+    <!-- Details Row (Cleanly spaced) -->
+    <g transform="translate(18, 126)">
+      <text x="4" y="16" fill="#88A298" font-size="11.5">လဲလှယ်နှုန်း: 1 SGD = 3,080 MMK</text>
+      <text x="4" y="34" fill="#88A298" font-size="11.5">ဝန်ဆောင်ခ: 2.00 SGD</text>
+
+      <!-- Status Badge -->
+      <rect x="236" y="8" width="78" height="24" rx="12" fill="#154238" stroke="#34D399" stroke-width="0.8"/>
+      <text x="275" y="24" text-anchor="middle" fill="#A7F3D0" font-size="11.5" font-weight="600">အောင်မြင်</text>
+    </g>
+  </g>
+
+  <!-- Bottom Navigation Bar -->
+  <g transform="translate(0, 755)">
+    <rect width="390" height="89" fill="#07201A" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    
+    <!-- Tab 1: ပင်မ -->
+    <path d="M 30.5 19.5 L 39 12.5 L 47.5 19.5 L 47.5 27 C 47.5 27.8 46.8 28.5 46 28.5 L 32 28.5 C 31.2 28.5 30.5 27.8 30.5 27 Z" fill="none" stroke="#758D84" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 36.5 28.5 L 36.5 23.5 C 36.5 23 37 22.5 37.5 22.5 L 40.5 22.5 C 41 22.5 41.5 23 41.5 23.5 L 41.5 28.5" fill="none" stroke="#758D84" stroke-width="1.5" stroke-linejoin="round"/>
+    <text x="39" y="48" text-anchor="middle" fill="#758D84" font-size="10.5">ပင်မ</text>
+
+    <!-- Tab 2: အဖွဲ့များ -->
+    <g fill="none" stroke="#758D84" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="113" cy="14.5" r="3.2"/>
+      <path d="M 105.5 27.5 C 105.5 23.8 108.8 21.5 113 21.5 C 117.2 21.5 120.5 23.8 120.5 27.5"/>
+      <path d="M 119.5 12 A 2.6 2.6 0 1 1 123.5 16"/>
+      <path d="M 121.2 22.5 C 123.2 23.2 125 24.8 125 27.5"/>
+    </g>
+    <text x="117" y="48" text-anchor="middle" fill="#758D84" font-size="10.5">အဖွဲ့များ</text>
+
+    <!-- Tab 3: ထည့်ရန် (Add +) -->
+    <circle cx="195" cy="18" r="18" fill="#0B7963"/>
+    <path d="M 195 11 L 195 25 M 188 18 L 202 18" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"/>
+    <text x="195" y="48" text-anchor="middle" fill="#758D84" font-size="10.5">ထည့်ရန်</text>
+
+    <!-- Tab 4: မှတ်တမ်း (Active) -->
+    <rect x="249" y="6" width="48" height="26" rx="13" fill="#13473B"/>
+    <g stroke="#34D399" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <rect x="266" y="10.5" width="14" height="17" rx="2.5" fill="#15473C"/>
+      <path d="M 269.5 15 L 276.5 15 M 269.5 19 L 276.5 19 M 269.5 23 L 273.5 23"/>
+    </g>
+    <text x="273" y="48" text-anchor="middle" fill="#34D399" font-size="10.5" font-weight="600">မှတ်တမ်း</text>
+
+    <!-- Tab 5: အကောင့် -->
+    <g fill="none" stroke="#758D84" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="351" cy="14.5" r="3.3"/>
+      <path d="M 343.5 27.5 C 343.5 23.5 346.8 21.2 351 21.2 C 355.2 21.2 358.5 23.5 358.5 27.5"/>
+    </g>
+    <text x="351" y="48" text-anchor="middle" fill="#758D84" font-size="10.5">အကောင့်</text>
+
+    <!-- Home Indicator -->
+    <rect x="128" y="76" width="134" height="4.5" rx="2.25" fill="#FFFFFF" opacity="0.3"/>
+  </g>
+</svg>

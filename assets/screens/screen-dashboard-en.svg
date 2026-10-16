@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 844" width="390" height="844" style="background:#071E19; font-family:'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <linearGradient id="dbCardGradEn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E332B"/>
+      <stop offset="100%" stop-color="#08221D"/>
+    </linearGradient>
+  </defs>
+
+  <!-- iOS Status Bar -->
+  <text x="36" y="38" fill="#F2EBDD" font-size="15" font-weight="600" letter-spacing="-0.2">9:23</text>
+  <!-- Dynamic Island -->
+  <rect x="130" y="14" width="130" height="32" rx="16" fill="#000000"/>
+  <!-- Status Icons -->
+  <g transform="translate(325, 26)" fill="#F2EBDD">
+    <path d="M 0 10 L 3 10 L 3 14 L 0 14 Z M 5 7 L 8 7 L 8 14 L 5 14 Z M 10 4 L 13 4 L 13 14 L 10 14 Z M 15 1 L 18 1 L 18 14 L 15 14 Z"/>
+    <rect x="24" y="2" width="22" height="12" rx="3" fill="none" stroke="#F2EBDD" stroke-width="1.5"/>
+    <rect x="26" y="4" width="16" height="8" rx="1.5" fill="#34D399"/>
+  </g>
+
+  <!-- App Header -->
+  <text x="20" y="105" fill="#F2EBDD" font-size="28" font-weight="700">Home</text>
+  <g transform="translate(305, 85)" stroke="#D4B26A" stroke-width="1.8" fill="none">
+    <!-- Receipt Icon -->
+    <rect x="0" y="2" width="18" height="22" rx="2"/>
+    <line x1="4" y1="7" x2="14" y2="7"/>
+    <line x1="4" y1="12" x2="14" y2="12"/>
+    <line x1="4" y1="17" x2="10" y2="17"/>
+    <!-- Chart Icon -->
+    <circle cx="42" cy="13" r="11"/>
+    <path d="M 42 2 L 42 13 L 53 13" fill="#D4B26A" opacity="0.3"/>
+  </g>
+
+  <!-- Split Balance Summary Cards (Payable & Receivable) -->
+  <!-- Left Card: Payable -->
+  <g transform="translate(20, 140)">
+    <rect width="168" height="154" rx="18" fill="url(#dbCardGradEn)" stroke="rgba(212,178,106,0.18)" stroke-width="1"/>
+    <circle cx="34" cy="36" r="15" fill="#154238"/>
+    <path d="M 34 42 L 34 30 M 29 35 L 34 30 L 39 35" stroke="#F87171" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="58" y="41" fill="#F2EBDD" font-size="16" font-weight="600">Payable</text>
+    <text x="24" y="94" fill="#F2EBDD" font-size="24" font-weight="700">0.00</text>
+    <text x="86" y="94" fill="#758D84" font-size="14" font-weight="500"> SGD</text>
+    <!-- Badge: Settled up -->
+    <rect x="20" y="112" width="116" height="28" rx="14" fill="#124036"/>
+    <path d="M 34 126 L 39 131 L 48 122" stroke="#34D399" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <text x="54" y="131" fill="#A7F3D0" font-size="12" font-weight="500">Settled up</text>
+  </g>
+
+  <!-- Right Card: Receivable -->
+  <g transform="translate(202, 140)">
+    <rect width="168" height="154" rx="18" fill="url(#dbCardGradEn)" stroke="rgba(212,178,106,0.18)" stroke-width="1"/>
+    <circle cx="34" cy="36" r="15" fill="#154238"/>
+    <path d="M 34 30 L 34 42 M 29 37 L 34 42 L 39 37" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="58" y="41" fill="#F2EBDD" font-size="16" font-weight="600">Receivable</text>
+    <text x="24" y="94" fill="#F2EBDD" font-size="24" font-weight="700">0.00</text>
+    <text x="86" y="94" fill="#758D84" font-size="14" font-weight="500"> SGD</text>
+    <!-- Badge: Settled up -->
+    <rect x="20" y="112" width="116" height="28" rx="14" fill="#124036"/>
+    <path d="M 34 126 L 39 131 L 48 122" stroke="#34D399" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <text x="54" y="131" fill="#A7F3D0" font-size="12" font-weight="500">Settled up</text>
+  </g>
+
+  <!-- Settled Alert Banner -->
+  <g transform="translate(20, 310)">
+    <rect width="350" height="52" rx="14" fill="#0C2C24" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+    <circle cx="38" cy="26" r="12" fill="#124E3F"/>
+    <path d="M 32 26 L 36 30 L 44 22" stroke="#34D399" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <text x="64" y="31" fill="#E2F1EC" font-size="13" font-weight="500">You're settled up with everyone.</text>
+  </g>
+
+  <!-- This Month Overview -->
+  <g transform="translate(20, 395)">
+    <text x="0" y="0" fill="#F2EBDD" font-size="18" font-weight="700">This month</text>
+    <rect x="230" y="-18" width="120" height="26" rx="13" fill="#163830"/>
+    <text x="244" y="-1" fill="#C2D6CF" font-size="12">October 2026</text>
+
+    <!-- Card -->
+    <rect x="0" y="14" width="350" height="142" rx="18" fill="url(#dbCardGradEn)" stroke="rgba(212,178,106,0.12)" stroke-width="1"/>
+    
+    <!-- Row 1: Income -->
+    <circle cx="34" cy="50" r="16" fill="#124438"/>
+    <path d="M 28 50 L 33 55 L 42 44" stroke="#34D399" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <text x="62" y="44" fill="#758D84" font-size="11">Total</text>
+    <text x="62" y="60" fill="#F2EBDD" font-size="14" font-weight="600">Income</text>
+    <text x="264" y="55" fill="#F2EBDD" font-size="16" font-weight="700">0.00 SGD</text>
+
+    <line x1="20" y1="84" x2="330" y2="84" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+    <!-- Row 2: Expense -->
+    <circle cx="34" cy="118" r="16" fill="#16342E"/>
+    <path d="M 29 123 L 39 113 M 39 121 L 39 113 L 31 113" stroke="#F87171" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <text x="62" y="112" fill="#758D84" font-size="11">Total</text>
+    <text x="62" y="128" fill="#F2EBDD" font-size="14" font-weight="600">Spending (your shares)</text>
+    <text x="232" y="112" fill="#F87171" font-size="16" font-weight="700">-844.92 SGD</text>
+    <text x="216" y="134" fill="#758D84" font-size="11">15% less than last month</text>
+  </g>
+
+  <!-- Recent Transactions Section -->
+  <g transform="translate(20, 575)">
+    <text x="0" y="0" fill="#F2EBDD" font-size="18" font-weight="700">Recent transactions</text>
+    <text x="320" y="0" fill="#34D399" font-size="13" font-weight="500">All ›</text>
+
+    <!-- Transaction Item -->
+    <rect x="0" y="16" width="350" height="78" rx="18" fill="url(#dbCardGradEn)" stroke="rgba(212,178,106,0.12)" stroke-width="1"/>
+    <circle cx="36" cy="55" r="18" fill="#3E2020"/>
+    <path d="M 31 49 L 31 56 M 34 49 L 34 56 M 38 49 L 38 56 M 41 49 L 41 61" stroke="#F87171" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="66" y="46" fill="#F2EBDD" font-size="15" font-weight="600">A Kitchen</text>
+    <text x="66" y="63" fill="#758D84" font-size="11">2026-10-14</text>
+    <!-- Tag -->
+    <rect x="66" y="70" width="86" height="18" rx="9" fill="#1C3831"/>
+    <text x="74" y="83" fill="#A7F3D0" font-size="10">Food &amp; Drinks</text>
+    <!-- Group pill -->
+    <rect x="158" y="70" width="40" height="18" rx="9" fill="#17312B"/>
+    <text x="168" y="83" fill="#C2D6CF" font-size="10">👥 3</text>
+
+    <text x="246" y="56" fill="#F87171" font-size="15" font-weight="700">-68.65 SGD</text>
+  </g>
+
+  <!-- Bottom Navigation Bar -->
+  <g transform="translate(0, 755)">
+    <rect width="390" height="89" fill="#07201A" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    
+    <!-- Tab 1: Home (Active) -->
+    <rect x="15" y="6" width="48" height="26" rx="13" fill="#13473B"/>
+    <path d="M 39 12 L 48 19.5 L 48 27 C 48 27.8 47.3 28.5 46.5 28.5 L 42 28.5 L 42 23.5 C 42 23 41.5 22.5 41 22.5 L 37 22.5 C 36.5 22.5 36 23 36 23.5 L 36 28.5 L 31.5 28.5 C 30.7 28.5 30 27.8 30 27 L 30 19.5 Z" fill="#34D399"/>
+    <text x="39" y="48" text-anchor="middle" fill="#34D399" font-size="10.5" font-weight="600">Home</text>
+
+    <!-- Tab 2: Groups -->
+    <g fill="none" stroke="#758D84" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="113" cy="14.5" r="3.2"/>
+      <path d="M 105.5 27.5 C 105.5 23.8 108.8 21.5 113 21.5 C 117.2 21.5 120.5 23.8 120.5 27.5"/>
+      <path d="M 119.5 12 A 2.6 2.6 0 1 1 123.5 16"/>
+      <path d="M 121.2 22.5 C 123.2 23.2 125 24.8 125 27.5"/>
+    </g>
+    <text x="117" y="48" text-anchor="middle" fill="#758D84" font-size="10.5">Groups</text>
+
+    <!-- Tab 3: Add (+) -->
+    <circle cx="195" cy="18" r="18" fill="#0B7963"/>
+    <path d="M 195 11 L 195 25 M 188 18 L 202 18" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"/>
+    <text x="195" y="48" text-anchor="middle" fill="#758D84" font-size="10.5">Add</text>
+
+    <!-- Tab 4: Activity -->
+    <g stroke="#758D84" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <rect x="266" y="10.5" width="14" height="17" rx="2.5"/>
+      <path d="M 269.5 15 L 276.5 15 M 269.5 19 L 276.5 19 M 269.5 23 L 273.5 23"/>
+    </g>
+    <text x="273" y="48" text-anchor="middle" fill="#758D84" font-size="10.5">Activity</text>
+
+    <!-- Tab 5: Account -->
+    <g fill="none" stroke="#758D84" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="351" cy="14.5" r="3.3"/>
+      <path d="M 343.5 27.5 C 343.5 23.5 346.8 21.2 351 21.2 C 355.2 21.2 358.5 23.5 358.5 27.5"/>
+    </g>
+    <text x="351" y="48" text-anchor="middle" fill="#758D84" font-size="10.5">Account</text>
+
+    <!-- Home Indicator -->
+    <rect x="128" y="76" width="134" height="4.5" rx="2.25" fill="#FFFFFF" opacity="0.3"/>
+  </g>
+</svg>

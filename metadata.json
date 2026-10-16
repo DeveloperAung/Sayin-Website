@@ -1,0 +1,6 @@
+{
+  "name": "Sayin - Personal Finance & Expense Splitting",
+  "description": "A calm, private personal finance and expense-splitting app for iOS and Android (iPhone, iPad, Android & Tablets) by Bagan Byte. Bilingual in English and Burmese.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

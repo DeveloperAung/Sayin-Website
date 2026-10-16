@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00C49F"/>
+      <stop offset="50%" stop-color="#0E8A73"/>
+      <stop offset="100%" stop-color="#063E33"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B5E50"/>
+      <stop offset="100%" stop-color="#0A362C"/>
+    </linearGradient>
+    <linearGradient id="goldChip" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE588"/>
+      <stop offset="100%" stop-color="#D4AF37"/>
+    </linearGradient>
+    <linearGradient id="receiptGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F4FAF8"/>
+    </linearGradient>
+    <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDBA74"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <linearGradient id="arrowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A7F3D0"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#021C16" flood-opacity="0.35"/>
+    </filter>
+    <filter id="iconShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- App Icon Base Background -->
+  <rect width="512" height="512" rx="114" fill="url(#bgGrad)"/>
+  
+  <!-- Credit Card in Background -->
+  <g transform="translate(195, 80) rotate(14)" filter="url(#softShadow)">
+    <rect width="220" height="138" rx="16" fill="url(#cardGrad)" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+    <!-- Chip -->
+    <rect x="24" y="32" width="44" height="34" rx="6" fill="url(#goldChip)"/>
+    <line x1="46" y1="32" x2="46" y2="66" stroke="#B48A1E" stroke-width="1.5"/>
+    <line x1="24" y1="49" x2="68" y2="49" stroke="#B48A1E" stroke-width="1.5"/>
+    <!-- Circles logo -->
+    <circle cx="156" cy="100" r="18" fill="#34D399" opacity="0.85"/>
+    <circle cx="178" cy="100" r="18" fill="#A7F3D0" opacity="0.65"/>
+  </g>
+
+  <!-- Receipt Scroll -->
+  <g transform="translate(125, 160)" filter="url(#softShadow)">
+    <path d="M 10 0 
+             L 210 0 
+             C 218 0, 224 6, 224 14 
+             L 224 230 
+             L 210 216 L 196 230 L 182 216 L 168 230 L 154 216 L 140 230 L 126 216 L 112 230 L 98 216 L 84 230 L 70 216 L 56 230 L 42 216 L 28 230 L 14 216 L 0 230 
+             L 0 14 
+             C 0 6, 6 0, 10 0 Z" 
+          fill="url(#receiptGrad)"/>
+    
+    <!-- Receipt Content Lines -->
+    <rect x="36" y="36" width="90" height="16" rx="8" fill="#6EE7B7"/>
+    
+    <circle cx="44" cy="76" r="8" fill="#34D399"/>
+    <rect x="62" y="70" width="70" height="12" rx="6" fill="#A7F3D0"/>
+    
+    <circle cx="44" cy="106" r="8" fill="#34D399"/>
+    <rect x="62" y="100" width="70" height="12" rx="6" fill="#A7F3D0"/>
+    
+    <circle cx="44" cy="136" r="8" fill="#34D399"/>
+    <rect x="62" y="130" width="70" height="12" rx="6" fill="#A7F3D0"/>
+
+    <!-- Spreadsheet grid right side of receipt -->
+    <rect x="146" y="60" width="62" height="106" rx="6" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1.5"/>
+    <line x1="146" y1="84" x2="208" y2="84" stroke="#A7F3D0" stroke-width="1.5"/>
+    <line x1="146" y1="108" x2="208" y2="108" stroke="#A7F3D0" stroke-width="1.5"/>
+    <line x1="146" y1="132" x2="208" y2="132" stroke="#A7F3D0" stroke-width="1.5"/>
+    <line x1="177" y1="60" x2="177" y2="166" stroke="#A7F3D0" stroke-width="1.5"/>
+    <rect x="177" y="84" width="31" height="24" fill="#10B981" opacity="0.3"/>
+  </g>
+
+  <!-- Splitting Circular Flow & Avatars -->
+  <!-- Top Left Avatar -->
+  <g transform="translate(85, 145)" filter="url(#iconShadow)">
+    <circle cx="48" cy="48" r="48" fill="url(#avatarGrad)"/>
+    <!-- Avatar Person Head & Body -->
+    <circle cx="48" cy="38" r="14" fill="#FFFDF8"/>
+    <path d="M 28 66 C 28 55, 37 53, 48 53 C 59 53, 68 55, 68 66 Z" fill="#FFFDF8"/>
+  </g>
+
+  <!-- Bottom Right Avatar -->
+  <g transform="translate(275, 295)" filter="url(#iconShadow)">
+    <circle cx="48" cy="48" r="48" fill="url(#avatarGrad)"/>
+    <circle cx="48" cy="38" r="14" fill="#FFFDF8"/>
+    <path d="M 28 66 C 28 55, 37 53, 48 53 C 59 53, 68 55, 68 66 Z" fill="#FFFDF8"/>
+  </g>
+
+  <!-- Curved Connecting Arrows -->
+  <!-- Arrow 1: Top Right toward Left -->
+  <path d="M 240 120 C 180 110, 130 135, 120 150" 
+        fill="none" stroke="url(#arrowGrad)" stroke-width="18" stroke-linecap="round"/>
+  <polygon points="215,100 252,122 222,142" fill="#34D399"/>
+
+  <!-- Arrow 2: Bottom Left toward Right -->
+  <path d="M 95 240 C 90 320, 150 375, 275 365" 
+        fill="none" stroke="url(#arrowGrad)" stroke-width="18" stroke-linecap="round"/>
+  <polygon points="260,345 292,365 264,386" fill="#34D399"/>
+</svg>
