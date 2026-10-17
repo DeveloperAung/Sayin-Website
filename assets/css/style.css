@@ -1041,15 +1041,22 @@ img, svg {
   color: var(--text-primary);
 }
 
-.policy-placeholder-box {
-  background-color: var(--bg-primary);
-  border: 2px dashed var(--hairline-gold);
-  border-radius: var(--radius-lg);
-  padding: 2.5rem 2rem;
-  text-align: center;
+.policy-body {
   color: var(--text-secondary);
-  margin: 1.5rem 0;
   font-size: 0.95rem;
+  line-height: 1.9;
+  overflow-wrap: anywhere;
+}
+
+.policy-body h3 {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  margin: 1.75rem 0 0.65rem;
+}
+
+.policy-body a {
+  color: var(--accent-gold);
+  text-decoration: underline;
 }
 
 .support-grid {
