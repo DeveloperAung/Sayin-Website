@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>အသုံးပြုနည်း – Sayin User Guide</title>
+  <meta name="description" content="Sayin အသုံးပြုပုံ လမ်းညွှန် — Wallet၊ အသုံးစရိတ်၊ Group၊ စာရင်းရှင်းတမ်းနှင့် Settings ကို ပုံများနှင့်အတူ အဆင့်လိုက်လေ့လာရန်။">
+  <meta name="author" content="Bagan Byte">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sayin.baganbyte.com/user-guide/">
+  <meta property="og:title" content="Sayin User Guide">
+  <meta property="og:description" content="Sayin အသုံးပြုပုံ လမ်းညွှန် — Wallet၊ အသုံးစရိတ်၊ Group၊ စာရင်းရှင်းတမ်းနှင့် Settings ကို ပုံများနှင့်အတူ အဆင့်လိုက်လေ့လာရန်။">
+  <meta property="og:image" content="/assets/apple-touch-icon.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Sayin User Guide">
+  <meta name="twitter:description" content="Sayin အသုံးပြုပုံ လမ်းညွှန် — Wallet၊ အသုံးစရိတ်၊ Group၊ စာရင်းရှင်းတမ်းနှင့် Settings ကို ပုံများနှင့်အတူ အဆင့်လိုက်လေ့လာရန်။">
+  <meta name="twitter:image" content="/assets/apple-touch-icon.png">
+
+  <!-- Icons -->
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="alternate icon" type="image/png" href="/assets/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="canonical" href="https://sayin.baganbyte.com/user-guide/">
+  <link rel="stylesheet" href="/assets/css/user-guide.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand-link" aria-label="Sayin Home">
+        <img src="/assets/icons/sayin-icon.svg" alt="Sayin App Icon" class="brand-icon" width="40" height="40">
+        <div class="brand-text">
+          <span class="brand-name">Sayin</span>
+          <span class="brand-subtitle">by Bagan Byte</span>
+        </div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="/#features" class="nav-link"><span class="lang-en">Features</span><span class="lang-my">လုပ်ဆောင်ချက်များ</span></a></li>
+          <li><a href="/#screenshots" class="nav-link"><span class="lang-en">Screenshots</span><span class="lang-my">နမူနာပုံစံများ</span></a></li>
+          <li><a href="/#faq" class="nav-link"><span class="lang-en">FAQ</span><span class="lang-my">မေးလေ့ရှိသည်များ</span></a></li>
+          <li><a href="/user-guide/" class="nav-link active" aria-current="page"><span class="lang-en">User Guide</span><span class="lang-my">အသုံးပြုနည်း</span></a></li>
+          <li><a href="/support/" class="nav-link"><span class="lang-en">Support</span><span class="lang-my">အကူအညီ</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Bilingual Switcher -->
+        <div class="segmented-control" role="group" aria-label="Language selection">
+          <button type="button" class="segmented-btn active" data-lang-btn="en" aria-pressed="true">EN</button>
+          <button type="button" class="segmented-btn" data-lang-btn="my" aria-pressed="false">မြန်မာ</button>
+        </div>
+
+        <button id="mobile-menu-toggle" class="icon-btn mobile-menu-btn" aria-label="Open menu" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-drawer" class="mobile-nav-drawer" aria-label="Mobile Navigation">
+      <ul class="mobile-nav-list">
+        <li><a href="/user-guide/"><span class="lang-en">User Guide</span><span class="lang-my">အသုံးပြုနည်း</span></a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/#features">Features</a></li>
+        <li><a href="/#screenshots">Screenshots</a></li>
+        <li><a href="/#faq">FAQ</a></li>
+        <li><a href="/support/">Support</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="user-guide" lang="my"><header class="guide-intro"><p class="eyebrow">SAYIN · USER GUIDE · မြန်မာ</p><h1>Sayin — အသုံးပြုပုံ လမ်းညွှန်</h1><p>လက်တွေ့သုံးရန် အဆင့်လိုက်လမ်းညွှန် · ၂၀၂၆ အောက်တိုဘာ ၂၃</p><button onclick="window.print()">Print / PDF အဖြစ်သိမ်းရန်</button><p class="guide-language-note">This guide is available in Burmese. · ဤလမ်းညွှန်ကို မြန်မာဘာသာဖြင့် ဖတ်ရှုနိုင်ပါသည်။</p></header>
+<p>Wallet၊ အဝင်/အထွက်၊ အတူသုံးငွေ၊ Group၊ စာရင်းရှင်းတမ်းနှင့် Settings</p>
+<p>လက်ရှိ local-only app အတွက် • ၂၀၂၆ အောက်တိုဘာ ၂၃</p>
+<p>ဤလမ်းညွှန်ပါ ပုံများသည် လက်ရှိ Flutter app ကို မြန်မာဘာသာနှင့် နမူနာ data ဖြင့် render လုပ်ထားသော screenshot များဖြစ်သည်။ ဖုန်းအရွယ်အစား၊ theme နှင့် ထည့်ထားသောစာရင်းပေါ်မူတည်ပြီး ပုံစံအနည်းငယ် ကွာနိုင်သည်။ ငွေပမာဏအားလုံးသည် ရှင်းပြရန် ဥပမာများဖြစ်သည်။</p>
+<nav class="guide-toc" aria-label="မာတိကာ"><h2>မာတိကာ</h2><a href="#section-1">၁။ App ကို အရင်သိထားရန်</a><a href="#section-2">၂။ Wallet ဖန်တီးရန်</a><a href="#section-3">၃။ ရိုးရိုးအသုံးစရိတ် မှတ်ရန်</a><a href="#section-4">၄။ Description၊ Note၊ Date၊ Wallet ကို ဘယ်လိုဖြည့်မလဲ</a><a href="#section-5">၅။ ဝင်ငွေ မှတ်ရန်</a><a href="#section-6">၆။ Wallet အချင်းချင်း ငွေလွှဲရန်</a><a href="#section-7">၇။ Group မဖွဲ့ဘဲ လူတွေနဲ့ အတူသုံးရန်</a><a href="#section-8">၈။ အညီအမျှ ခွဲရန် — Equal</a><a href="#section-9">၉။ ပမာဏအတိအကျ၊ ရာခိုင်နှုန်းနှင့် အချိုးဖြင့် ခွဲရန်</a><a href="#section-10">၁၀။ Group အသစ်ဖွဲ့ရန်</a><a href="#section-11">၁၁။ Group အဝင်/အထွက် မှတ်ရန်</a><a href="#section-12">၁၂။ ပေးရန်/ရရန်နှင့် ငွေရှင်းရန်</a><a href="#section-13">၁၃။ ကိုယ့်စာရင်းရှင်းတမ်းကို Export ထုတ်ရန်</a><a href="#section-14">၁၄။ Group စာရင်းရှင်းတမ်းကို Export ထုတ်ရန်</a><a href="#section-15">၁၅။ မှတ်တမ်း၊ Search နှင့် Pagination</a><a href="#section-16">၁၆။ Settings ကို ပြင်ရန်</a><a href="#section-17">၁၇။ Backup နှင့် App lock</a><a href="#section-18">၁၈။ နေ့စဉ်သုံးရန် အတိုချုပ် ဥပမာ</a></nav><section id="section-1"><h2>၁။ App ကို အရင်သိထားရန်</h2>
+<div class="screens">
+<figure><a href="/assets/user-guide/01-home.png" target="_blank"><img src="/assets/user-guide/01-home.png" alt="ပင်မစာမျက်နှာ — ပေးရန်၊ ရရန်နှင့် လစဉ်စာရင်း" loading="lazy" width="440" height="956"></a><figcaption>ပင်မစာမျက်နှာ — ပေးရန်၊ ရရန်နှင့် လစဉ်စာရင်း</figcaption></figure>
+</div>
+<p>အောက်ဘက် navigation မှာ ပင်မ၊ အဖွဲ့များ၊ အလယ်ရှိ +၊ မှတ်တမ်းနှင့် စီမံရန် ရှိသည်။ စီမံရန်စာမျက်နှာထဲမှာ Settings နှင့် စာရင်းစီမံရန်နေရာများ ရှိသည်။</p>
+<ol>
+<li><strong>ပင်မ</strong> မှာ ကိုယ့်ရဲ့ ပေးရန်/ရရန်နှင့် ဝင်ငွေ/သုံးငွေကို ကြည့်ပါ။</li>
+<li><strong>+</strong> ကိုနှိပ်ပြီး အဝင်၊ အထွက်၊ wallet အချင်းချင်း ငွေလွှဲ မှတ်ပါ။</li>
+<li><strong>အဖွဲ့များ</strong> ကို ခရီး၊ အစည်းအဝေး၊ ပါတီလို အတူကုန်ကျစရိတ်များအတွက် သုံးပါ။</li>
+<li><strong>မှတ်တမ်း</strong> မှာ ဘယ်စာရင်းကို ဘယ်အချိန်မှတ်ခဲ့လဲ ပြန်ကြည့်ပါ။</li>
+<li><strong>စီမံရန်</strong> မှာ Wallet၊ မိတ်ဆွေများ၊ အမျိုးအစားများ၊ စာရင်းရှင်းတမ်း၊ backup နှင့် Settings ကို ဖွင့်ပါ။</li>
+</ol>
+<p>ပေးရန်/ရရန်ဆိုတာ အကြွေးလက်ကျန်ဖြစ်ပြီး Wallet လက်ကျန်နဲ့ မတူပါ။ SGD၊ THB၊ MYR တို့ကို ငွေကြေးအမျိုးအစားအလိုက် သီးခြားဖတ်ပါ။</p>
+</section>
+<section id="section-2"><h2>၂။ Wallet ဖန်တီးရန်</h2>
+<div class="screens">
+<figure><a href="/assets/user-guide/02-wallets.png" target="_blank"><img src="/assets/user-guide/02-wallets.png" alt="Wallet များနှင့် လက်ကျန်" loading="lazy" width="440" height="956"></a><figcaption>Wallet များနှင့် လက်ကျန်</figcaption></figure>
+<figure><a href="/assets/user-guide/03-wallet-create.png" target="_blank"><img src="/assets/user-guide/03-wallet-create.png" alt="Wallet အသစ် — အမည်၊ ပုံစံ၊ ငွေကြေးနှင့် စတင်လက်ကျန်" loading="lazy" width="440" height="956"></a><figcaption>Wallet အသစ် — အမည်၊ ပုံစံ၊ ငွေကြေးနှင့် စတင်လက်ကျန်</figcaption></figure>
+</div>
+<p>Wallet ဆိုတာ ကိုယ့်ငွေကို ထားထားတဲ့ နေရာဖြစ်သည်။ ဥပမာ SGD ငွေသား၊ SGD ဘဏ်၊ THB ငွေသား၊ MYR ဘဏ်တို့ကို ခွဲထားနိုင်သည်။</p>
+<ol>
+<li><strong>စီမံရန် → Wallet များ → +</strong> ကိုနှိပ်ပါ။</li>
+<li>အမည်မှာ <code>SGD ငွေသား</code> လို ခွဲသိလွယ်အောင် ရေးပါ။</li>
+<li>ငွေသား၊ ဘဏ်၊ mobile wallet သို့မဟုတ် ကတ် စသည့် ကိုက်ညီသောပုံစံကို ရွေးပါ။</li>
+<li>Wallet ရဲ့ ငွေကြေးကို ရွေးပါ။ Wallet တစ်ခုက ငွေကြေးတစ်မျိုးအတွက် ဖြစ်သည်။</li>
+<li>App စသုံးချိန် လက်ထဲရှိငွေကို <strong>စတင်လက်ကျန်</strong> မှာ ဖြည့်ပါ။ မဖြည့်ရင် သုညမှ စမည်။</li>
+<li><strong>သိမ်းဆည်းရန်</strong> ကိုနှိပ်ပါ။</li>
+</ol>
+<p><strong>ဥပမာ။</strong> စတင်လက်ကျန် SGD ၅၀၀ ထားပြီး ထို wallet နဲ့ နေ့လယ်စာ ၂၀ သုံးလျှင် လက်ကျန် ၄၈၀ ဖြစ်သည်။ စတင်လက်ကျန် ၅၀၀ ကို လစာဝင်ငွေအဖြစ် ထပ်မမှတ်ပါနှင့်။ ထိုသို့မှတ်လျှင် နှစ်ကြိမ်တိုးသွားမည်။</p>
+<p>Wallet ပြင်ဆင်ရာမှာ အမည်၊ ပုံစံနှင့် စတင်လက်ကျန်ကို ပြင်နိုင်ပေမယ့် ငွေကြေးကို ပြောင်းမရပါ။ တခြားငွေကြေးလိုလျှင် Wallet အသစ်ဖန်တီးပါ။</p>
+</section>
+<section id="section-3"><h2>၃။ ရိုးရိုးအသုံးစရိတ် မှတ်ရန်</h2>
+<div class="screens">
+<figure><a href="/assets/user-guide/04-expense.png" target="_blank"><img src="/assets/user-guide/04-expense.png" alt="အသုံးစရိတ်အသစ် — ပမာဏ၊ အကြောင်းအရာနှင့် အမျိုးအစား" loading="lazy" width="440" height="956"></a><figcaption>အသုံးစရိတ်အသစ် — ပမာဏ၊ အကြောင်းအရာနှင့် အမျိုးအစား</figcaption></figure>
+</div>
+<ol>
+<li>အလယ်က <strong>+ → အသုံးစရိတ်</strong> ကို ရွေးပါ။</li>
+<li>အပေါ်က ငွေကြေးကို စစ်ပါ။ SGD ၂၀ ဆိုရင် <code>SGD</code> ကို ရွေးပြီး keypad နဲ့ <code>20</code> ရိုက်ပါ။</li>
+<li><strong>အကြောင်းအရာ</strong> မှာ <code>နေ့လယ်စာ</code> လို ဘာအတွက်သုံးလဲ ရေးပါ။</li>
+<li>အစားအသောက်၊ သွားလာရေး၊ ဈေးဝယ် စသည့် <strong>အမျိုးအစား</strong> ကို ရွေးပါ။ မတွေ့ရင် “နောက်ထပ်” ကို ဖွင့်ပါ။</li>
+<li>အောက်ကို scroll လုပ်ပြီး ရက်စွဲ၊ Wallet နှင့် လိုအပ်သည့်အချက်များကို စစ်ပါ။</li>
+<li>ကိုယ်တစ်ယောက်တည်းအတွက်ဆို <strong>အတူ</strong> မှာ လူရွေးရန် မလိုပါ။</li>
+<li>သိမ်းခလုတ်ကို နှိပ်ပါ။ သိမ်းပြီးကြောင်း အပေါ်မှာ message ပြမည်။</li>
+</ol>
+<p><strong>အကြောင်းအရာ</strong> က စာရင်းကို ပြန်ရှာတဲ့အခါ အဓိကဖတ်ရမယ့် အမည်ဖြစ်သည်။ အမျိုးအစားရွေးတာက စားသောက်စရိတ်၊ သွားလာစရိတ် စသည့် report အုပ်စုခွဲခြင်းအတွက် ဖြစ်သည်။</p>
+</section>
+<section id="section-4"><h2>၄။ Description၊ Note၊ Date၊ Wallet ကို ဘယ်လိုဖြည့်မလဲ</h2>
+<div class="screens">
+<figure><a href="/assets/user-guide/05-date-wallet-note.png" target="_blank"><img src="/assets/user-guide/05-date-wallet-note.png" alt="အောက်ပိုင်းအသေးစိတ် — ရက်စွဲနှင့် Wallet" loading="lazy" width="440" height="956"></a><figcaption>အောက်ပိုင်းအသေးစိတ် — ရက်စွဲနှင့် Wallet</figcaption></figure>
+</div>
+<p>အပေါ်ညာဘက် ဂဏန်းခလုတ်ပိတ်ရန် ခလုတ်နဲ့ keypad ကို ချုံ့ပြီး အသေးစိတ် fields တွေကို ပိုကျယ်ကျယ်ကြည့်နိုင်သည်။ ပမာဏကိုနှိပ်ခြင်း သို့မဟုတ် ဂဏန်းခလုတ်ပြရန် ခလုတ်ကိုနှိပ်ခြင်းဖြင့် keypad ပြန်ဖွင့်နိုင်သည်။ Form အလယ်ပိုင်းကို scroll လုပ်လျှင် အောက်က fields တွေ မြင်နိုင်သည်။</p>
+<ol>
+<li><strong>အကြောင်းအရာ / Description</strong> — အတိုချုပ်ရေးပါ။ ဥပမာ <code>ဟိုတယ် ၂ ည</code>။</li>
+<li><strong>မှတ်ချက် / Note</strong> — ထပ်သိမ်းလိုသည့်အသေးစိတ်ရေးပါ။ ဥပမာ <code>အောင်က စိုက်ရှင်း၊ booking no. 1234</code>။ မလိုလျှင် ချန်ထားနိုင်သည်။</li>
+<li><strong>ရက်စွဲ / Date</strong> — တကယ်သုံးခဲ့သောနေ့ကို ရွေးပါ။ ယနေ့မှတ်သော်လည်း မနေ့ကသုံးခဲ့တာဆို မနေ့ရက်စွဲ ရွေးပါ။ Report က စာရင်းရဲ့ ရက်စွဲအလိုက် စုသည်။</li>
+<li><strong>Wallet</strong> — တကယ်ငွေထွက်သွားသည့် wallet ကို ရွေးပါ။ ရွေးမထားရင် မည်သည့် wallet လက်ကျန်ကိုမျှ ထိုစာရင်းက မပြောင်းပေးပါ။</li>
+<li><strong>ငွေလဲနှုန်း</strong> ပေါ်လာလျှင် main currency နှင့် ဆက်စပ်သောနှုန်းကို form မှာ ပြထားသည့် <code>1 … = …</code> အတိုင်း ဖြည့်ပါ။ Wallet ကို ငွေကြေးမတူတာနဲ့ ချိတ်ရန် မသုံးပါ။</li>
+<li>ပြေစာသိမ်းလိုလျှင် form အောက်ပိုင်း <strong>ဓာတ်ပုံရိုက်ရန် / ဓာတ်ပုံရွေးရန်</strong> ကို သုံးပါ။</li>
+</ol>
+<p>Wallet picker မှာ transaction နဲ့ ငွေကြေးတူတဲ့ wallet များကို ရွေးနိုင်သည်။ မရှိသေးရင် picker ထဲက Wallet အသစ်ဖန်တီးသည့်နေရာကို သုံးပါ။ စာရိုက်ချိန် keypad ပျောက်ပြီး သိမ်းခလုတ် အပေါ်ဘက်ပြောင်းပေါ်နိုင်သည်။</p>
+</section>
+<section id="section-5"><h2>၅။ ဝင်ငွေ မှတ်ရန်</h2>
+<div class="screens">
+<figure><a href="/assets/user-guide/06-income.png" target="_blank"><img src="/assets/user-guide/06-income.png" alt="ဝင်ငွေရွေးထားသော form" loading="lazy" width="440" height="956"></a><figcaption>ဝင်ငွေရွေးထားသော form</figcaption></figure>
+</div>
+<ol>
+<li><strong>+ → ဝင်ငွေ</strong> ကို ရွေးပါ။</li>
+<li>ငွေကြေးနှင့် ပမာဏ ဖြည့်ပါ။ ဥပမာ SGD ၃,၀၀၀။</li>
+<li>အကြောင်းအရာမှာ <code>အောက်တိုဘာ လစာ</code>၊ category မှာ လစာကို ရွေးပါ။</li>
+<li>ဝင်ခဲ့သောရက်စွဲနှင့် ငွေလက်ခံသည့် Wallet ကို ရွေးပါ။</li>
+<li>သိမ်းပါ။ Wallet ချိတ်ထားရင် ထို wallet လက်ကျန် တိုးမည်။</li>
+</ol>
+<p>သူငယ်ချင်းက အကြွေးပြန်ရှင်းပေးတာကို ဝင်ငွေအဖြစ် ထပ်မမှတ်ပါနှင့်။ <strong>ငွေရှင်းရန်</strong> မှာ မှတ်ပါ။ ကိုယ့် wallet အချင်းချင်း ရွှေ့တာကိုလည်း ဝင်ငွေအဖြစ် မမှတ်ပါနှင့်။</p>
+</section>
+<section id="section-6"><h2>၆။ Wallet အချင်းချင်း ငွေလွှဲရန်</h2>
+<div class="screens">
+<figure><a href="/assets/user-guide/25-transfer.png" target="_blank"><img src="/assets/user-guide/25-transfer.png" alt="ငွေလွှဲ — ထွက်မည့် wallet နှင့် ဝင်မည့် wallet" loading="lazy" width="440" height="956"></a><figcaption>ငွေလွှဲ — ထွက်မည့် wallet နှင့် ဝင်မည့် wallet</figcaption></figure>
+</div>
+<ol>
+<li><strong>+ → ငွေလွှဲ</strong> ကို ရွေးပါ။</li>
+<li>ပမာဏနှင့် ငွေကြေး ရွေးပါ။</li>
+<li>ငွေထွက်မည့် wallet နဲ့ ငွေဝင်မည့် wallet ကို ရွေးပါ။ တစ်ခုတည်းကို နှစ်ဖက်စလုံး မရွေးပါနှင့်။</li>
+<li>ရက်စွဲနှင့် မှတ်ချက်ကို စစ်ပြီး သိမ်းပါ။</li>
+</ol>
+<p>ဥပမာ SGD ဘဏ်ထဲက ၁၀၀ ကို SGD ငွေသားထဲရွှေ့လျှင် ဘဏ် ၁၀၀ လျော့၊ ငွေသား ၁၀၀ တိုးမည်။ ဒါဟာ အသုံးစရိတ်အသစ်လည်း မဟုတ်၊ ဝင်ငွေအသစ်လည်း မဟုတ်ပါ။ လက်ရှိ transfer form အတွက် ငွေကြေးတူသည့် ကိုယ့် wallet နှစ်ခုကို သုံးပါ။</p>
+</section>
+<section id="section-7"><h2>၇။ Group မဖွဲ့ဘဲ လူတွေနဲ့ အတူသုံးရန်</h2>
+<div class="screens">
+<figure><a href="/assets/user-guide/07-people.png" target="_blank"><img src="/assets/user-guide/07-people.png" alt="မိတ်ဆွေများ — အဖွဲ့ပြင်ပရှိလူများ" loading="lazy" width="440" height="956"></a><figcaption>မိတ်ဆွေများ — အဖွဲ့ပြင်ပရှိလူများ</figcaption></figure>
+<figure><a href="/assets/user-guide/08-people-record.png" target="_blank"><img src="/assets/user-guide/08-people-record.png" alt="အတူသုံးသူနှင့် မှတ်ရုံသာ / ခွဲမည် ရွေးချယ်မှု" loading="lazy" width="440" height="956"></a><figcaption>အတူသုံးသူနှင့် မှတ်ရုံသာ / ခွဲမည် ရွေးချယ်မှု</figcaption></figure>
+</div>
+<ol>
+<li><strong>စီမံရန် → မိတ်ဆွေများ</strong> မှာ လူအသစ်ဖန်တီးနိုင်သည်။ အမည်ကို ဖြည့်ပါ။ ဖုန်းနံပါတ်နဲ့ မှတ်ချက်ကို လိုမှဖြည့်ပါ။</li>
+<li><strong>+ → အသုံးစရိတ်</strong> မှာ ငွေပမာဏနှင့် အကြောင်းအရာကို ဖြည့်ပါ။</li>
+<li>အောက်ကို scroll လုပ်ပြီး <strong>အတူ</strong> ကိုနှိပ်ပါ။</li>
+<li>အတူသုံးသူ တစ်ဦး သို့မဟုတ် အများကို ရွေးပါ။ လူအသစ်ကိုလည်း ဒီနေရာက ဖန်တီးနိုင်သည်။</li>
+<li><strong>မှတ်ရုံသာ</strong> သို့မဟုတ် <strong>ခွဲမည်</strong> ကို ရွေးပါ။</li>
+</ol>
+<p><strong>မှတ်ရုံသာ</strong> ဆိုရင် “ဘယ်သူတွေနဲ့ အတူသုံးခဲ့လဲ” ကိုသာ သိမ်းသည်။ ဥပမာ ကိုယ်က သူငယ်ချင်း ၂ ယောက်ကို SGD ၉၀ ညစာကျွေးလိုက်တာဆို ကိုယ့်အသုံးစရိတ် ၉၀ ဖြစ်ပြီး သူတို့ဆီက ရရန်ငွေ မဖန်တီးပါ။</p>
+<p><strong>ခွဲမည်</strong> ဆိုရင် လူတစ်ယောက်ချင်းရဲ့ ဝေစုနဲ့ ငွေစိုက်သူပေါ်မူတည်ပြီး ပေးရန်/ရရန် တွက်မည်။ လက်ရှိ အဖွဲ့ပြင်ပ people sharing ကို personal <strong>အသုံးစရိတ်</strong> မှာ သုံးနိုင်သည်။</p>
+</section>
+<section id="section-8"><h2>၈။ အညီအမျှ ခွဲရန် — Equal</h2>
+<div class="screens">
+<figure><a href="/assets/user-guide/09-people-equal.png" target="_blank"><img src="/assets/user-guide/09-people-equal.png" alt="SGD ၉၀ ကို လူ ၃ ယောက် အညီအမျှခွဲခြင်း" loading="lazy" width="440" height="956"></a><figcaption>SGD ၉၀ ကို လူ ၃ ယောက် အညီအမျှခွဲခြင်း</figcaption></figure>
+</div>
+<ol>
+<li><strong>အတူ</strong> မှာ မြသီတာနှင့် ကိုကိုကို ရွေးပြီး <strong>ခွဲမည်</strong> ကိုနှိပ်ပါ။ ကိုယ်ပါလျှင် စုစုပေါင်း ၃ ယောက်ဖြစ်သည်။</li>
+<li><strong>ငွေစိုက်သူ</strong> မှာ တကယ်ပေးချေခဲ့သူကို ရွေးပါ။ ဥပမာ ကိုယ်က ၉၀ အပြည့်ရှင်းထားသည်။</li>
+<li>ခွဲခြင်းမှာ <strong>အညီအမျှ</strong> ကို ရွေးပါ။ ဝေစုပါမယ့်လူများကို switch ဖွင့်ထားပါ။</li>
+<li>လူတစ်ဦးစီရဲ့တွက်ပြီးဝေစုကို စစ်ပြီး သိမ်းပါ။</li>
+</ol>
+<p><strong>ရလဒ်။</strong> ၉၀ ÷ ၃ = တစ်ယောက် ၃၀ SGD။ ကိုယ်က အပြည့်ပေးထားလျှင် ကိုယ့်အသုံးစရိတ်ဝေစု ၃၀၊ မြသီတာဆီက ရရန် ၃၀၊ ကိုကိုဆီက ရရန် ၃၀ ဖြစ်သည်။ ငွေစိုက်သူက မြသီတာဆို ကိုယ့်ဝေစု ၃၀ ကို မြသီတာဆီ ပေးရန်ဖြစ်မည်။</p>
+<p>ငွေစိုက်သူဆိုတာ “အဲဒီအချိန် ငွေဘယ်သူ့လက်ထဲကထွက်လဲ” ဖြစ်ပြီး ဝေစုဆိုတာ “နောက်ဆုံး ဘယ်သူဘယ်လောက် ကုန်ကျရမလဲ” ဖြစ်သည်။</p>
+</section>
+<section id="section-9"><h2>၉။ ပမာဏအတိအကျ၊ ရာခိုင်နှုန်းနှင့် အချိုးဖြင့် ခွဲရန်</h2>
+<div class="screens">
+<figure><a href="/assets/user-guide/10-people-exact.png" target="_blank"><img src="/assets/user-guide/10-people-exact.png" alt="ပမာဏအတိအကျ ဖြည့်ခြင်း" loading="lazy" width="440" height="956"></a><figcaption>ပမာဏအတိအကျ ဖြည့်ခြင်း</figcaption></figure>
+<figure><a href="/assets/user-guide/11-people-percentage.png" target="_blank"><img src="/assets/user-guide/11-people-percentage.png" alt="ရာခိုင်နှုန်းအလိုက် ခွဲခြင်း" loading="lazy" width="440" height="956"></a><figcaption>ရာခိုင်နှုန်းအလိုက် ခွဲခြင်း</figcaption></figure>
+<figure><a href="/assets/user-guide/11b-people-shares.png" target="_blank"><img src="/assets/user-guide/11b-people-shares.png" alt="အချိုးအလိုက် ခွဲခြင်း" loading="lazy" width="440" height="956"></a><figcaption>အချိုးအလိုက် ခွဲခြင်း</figcaption></figure>
+</div>
+<p>အပေါ်က အဆင့်များအတိုင်း လူရွေး၊ <strong>ခွဲမည်</strong> ရွေးပြီး ခွဲခြင်းပုံစံကို ပြောင်းပါ။ လူတစ်ဦးစီအတွက် switch ဖွင့်ထားမှ ထိုလူ၏ value ကို ဖြည့်နိုင်မည်။ မပါမည့်လူကို ပိတ်ထားပါ။</p>
+<div class="table-wrap"><table><tr><th>ပုံစံ</th><th>ဖြည့်ရမည့်အချက်</th><th>SGD ၉၀ ဥပမာ — ကိုယ် / မြသီတာ / ကိုကို</th></tr><tr><td>အညီအမျှ</td><td>ပါဝင်သူများကို ရွေးရန်</td><td>၃၀ / ၃၀ / ၃၀</td></tr><tr><td>ပမာဏအတိအကျ</td><td>တစ်ဦးစီအတွက် တိကျသောငွေပမာဏ</td><td>၄၀ / ၃၀ / ၂၀</td></tr><tr><td>ရာခိုင်နှုန်း</td><td>တစ်ဦးစီအတွက် ရာခိုင်နှုန်း</td><td>၅၀% / ၃၀% / ၂၀% → ၄၅ / ၂၇ / ၁၈</td></tr><tr><td>အချိုး</td><td>တစ်ဦးစီအတွက် relative weight</td><td>၂ : ၁ : ၁ → ၄၅ / ၂၂.၅၀ / ၂၂.၅၀</td></tr></table></div>
+<ol>
+<li><strong>ပမာဏအတိအကျ</strong> ဆိုရင် value စုစုပေါင်းက စာရင်းပမာဏနဲ့ တိတိကျကျ တူရမည်။ ၉၀ မှာ ၄၀ + ၃၀ + ၂၀ ဖြစ်ရမည်။</li>
+<li><strong>ရာခိုင်နှုန်း</strong> ဆိုရင် စုစုပေါင်း ၁၀၀% ဖြစ်ရမည်။ App က ငွေကြေးရဲ့ ဒဿမအရေအတွက်နဲ့အညီ ဝေစုတွက်မည်။</li>
+<li><strong>အချိုး</strong> မှာ ငွေမဖြည့်ဘဲ အပိုင်းအရေအတွက် ဖြည့်ပါ။ ၂၊ ၁၊ ၁ ဆို စုစုပေါင်း ၄ ပိုင်းထဲက ကိုယ်က ၂ ပိုင်းယူသည်။</li>
+<li>“ကျန်…” သို့မဟုတ် “ပို…” ဆိုသည့် message ရှိလျှင် amounts/percentages ကို ပြန်စစ်ပါ။ ခွဲဝေမှုမမှန်သေးရင် သိမ်းမရနိုင်ပါ။</li>
+</ol>
+<p>ကိုယ်က အကုန်ကျခံမယ်ဆို ရိုးရိုးစာရင်းမှာ <strong>မှတ်ရုံသာ</strong> သုံးနိုင်သည်။ Group မှာတော့ group history ထဲ စာရင်းရှိစေချင်လျှင် ဝေစုထဲမှာ ကိုယ်တစ်ယောက်ပဲပါအောင် ရွေးနိုင်သည်။</p>
+</section>
+<section id="section-10"><h2>၁၀။ Group အသစ်ဖွဲ့ရန်</h2>
+<div class="screens">
+<figure><a href="/assets/user-guide/12-groups.png" target="_blank"><img src="/assets/user-guide/12-groups.png" alt="အဖွဲ့များစာမျက်နှာ" loading="lazy" width="440" height="956"></a><figcaption>အဖွဲ့များစာမျက်နှာ</figcaption></figure>
+<figure><a href="/assets/user-guide/13-group-create.png" target="_blank"><img src="/assets/user-guide/13-group-create.png" alt="Group အသစ်ဖောင်" loading="lazy" width="440" height="956"></a><figcaption>Group အသစ်ဖောင်</figcaption></figure>
+</div>
+<ol>
+<li><strong>အဖွဲ့များ → +</strong> ကိုနှိပ်ပါ။</li>
+<li>Group အမည်ကို ဖြည့်ပါ။ ဥပမာ <code>Bangkok Trip</code>၊ <code>Team Meeting</code>။</li>
+<li>ခရီး၊ အိမ်ထောင်စု၊ project၊ meeting သို့မဟုတ် other စသည့် ကိုက်ညီသောပုံစံကို ရွေးပါ။ Party အတွက် Other သုံးနိုင်သည်။</li>
+<li>အဓိကငွေကြေးနှင့် default ခွဲဝေပုံစံကို ရွေးပါ။ လိုပါက စ/ဆုံးရက်ကို ဖြည့်ပါ။</li>
+<li>သိမ်းပြီး group ရဲ့ <strong>အဖွဲ့ဝင်များ</strong> tab မှာ လူတွေကို အမည်နဲ့ ထည့်ပါ။</li>
+</ol>
+<p>လက်ရှိ local-only build မှာ group နဲ့ members တွေသည် ဒီဖုန်းထဲမှာရှိသည်။ အခြားသူများရဲ့ဖုန်းထဲကို အလိုအလျောက် မပို့ပေးပါ။ သူတို့ app account မရှိလည်း အမည်နဲ့ စာရင်းခွဲနိုင်သည်။</p>
+</section>
+<section id="section-11"><h2>၁၁။ Group အဝင်/အထွက် မှတ်ရန်</h2>
+<div class="screens">
+<figure><a href="/assets/user-guide/14-group-expense.png" target="_blank"><img src="/assets/user-guide/14-group-expense.png" alt="Group မှာ အဝင်/အထွက် အသစ်ထည့်ခြင်း" loading="lazy" width="440" height="956"></a><figcaption>Group မှာ အဝင်/အထွက် အသစ်ထည့်ခြင်း</figcaption></figure>
+<figure><a href="/assets/user-guide/15-group-split.png" target="_blank"><img src="/assets/user-guide/15-group-split.png" alt="Group မှာ ငွေစိုက်သူနှင့် ဝေစုခွဲခြင်း" loading="lazy" width="440" height="956"></a><figcaption>Group မှာ ငွေစိုက်သူနှင့် ဝေစုခွဲခြင်း</figcaption></figure>
+</div>
+<ol>
+<li>Group ကိုဖွင့်ပြီး <strong>+</strong> ကိုနှိပ်ပါ။ ဒီလမ်းကဝင်ရင် ထို group ကို ရွေးထားပြီးသားဖြစ်သည်။</li>
+<li><strong>အသုံးစရိတ်</strong> သို့မဟုတ် <strong>ဝင်ငွေ</strong> ကို ရွေးပါ။</li>
+<li>ငွေကြေး၊ ပမာဏ၊ အကြောင်းအရာ၊ category၊ date နှင့် note ကို ဖြည့်ပါ။</li>
+<li>အသုံးစရိတ်မှာ <strong>ငွေစိုက်သူ</strong>၊ ဝင်ငွေမှာ <strong>ငွေလက်ခံသူ</strong> ကို ရွေးပါ။</li>
+<li>အညီအမျှ၊ ပမာဏအတိအကျ၊ ရာခိုင်နှုန်း၊ အချိုးထဲက လိုသည့်ပုံစံရွေးပြီး members ရဲ့ဝေစု ဖြည့်ပါ။</li>
+<li>ကိုယ့် wallet ကနေ တကယ်ငွေထွက်/ဝင်လျှင် ငွေကြေးတူသည့် wallet ကို ရွေးပါ။ စစ်ပြီး သိမ်းပါ။</li>
+</ol>
+<p><strong>လူများစုပေါင်းပေးထားလျှင်။</strong> Group ရဲ့ ငွေစိုက်သူ picker မှာ လူများစွာပေးချေသည့် option ကို ရွေးပြီး တစ်ဦးချင်းပေးငွေ ဖြည့်ပါ။ ဥပမာ SGD ၁၂၀ ကို ကိုယ် ၈၀၊ မြသီတာ ၄၀ ပေးပြီး ဝေစုက ၃ ယောက် ၄၀ စီဆို ကိုယ်က ၄၀ ရရန်၊ မြသီတာက သုည၊ တတိယလူက ၄၀ ပေးရန်ဖြစ်သည်။ စိုက်ငွေစုစုပေါင်းလည်း ၁၂၀ ဖြစ်ရမည်။</p>
+<p><strong>Group ဝင်ငွေဥပမာ။</strong> ဟိုတယ်စပေါ်ငွေ SGD ၆၀ ပြန်ရပြီး မြသီတာက လက်ခံထားလျှင် ငွေလက်ခံသူကို မြသီတာရွေး၊ ဝေစု ၃ ယောက် ၂၀ စီ ခွဲပါ။ ဒါက group income ဖြစ်သည်။</p>
+<p>Group တစ်ခုမှာ SGD နဲ့ THB နှစ်မျိုးသုံးနိုင်သည်။ စာရင်းတစ်ကြောင်းစီအတွက် မှန်သောငွေကြေးကို ရွေးပါ။ Currency မတူတဲ့လက်ကျန်တွေကို ပေါင်းပြီး အကြွေးတစ်ခုတည်းအဖြစ် မဖတ်ပါနှင့်။</p>
+</section>
+<section id="section-12"><h2>၁၂။ ပေးရန်/ရရန်နှင့် ငွေရှင်းရန်</h2>
+<div class="screens">
+<figure><a href="/assets/user-guide/16-group-balances.png" target="_blank"><img src="/assets/user-guide/16-group-balances.png" alt="Group လက်ကျန်နှင့် ပေးရန်/ရရန်" loading="lazy" width="440" height="956"></a><figcaption>Group လက်ကျန်နှင့် ပေးရန်/ရရန်</figcaption></figure>
+<figure><a href="/assets/user-guide/17-settle.png" target="_blank"><img src="/assets/user-guide/17-settle.png" alt="ငွေရှင်းရန် — ပေးသူ၊ လက်ခံသူ၊ ပမာဏ၊ ငွေကြေး" loading="lazy" width="440" height="956"></a><figcaption>ငွေရှင်းရန် — ပေးသူ၊ လက်ခံသူ၊ ပမာဏ၊ ငွေကြေး</figcaption></figure>
+</div>
+<ol>
+<li><strong>Group → လက်ကျန် / Balances</strong> မှာ ဘယ်သူက ဘယ်သူ့ကို ဘယ်လောက်ပေးရန်လဲ ကြည့်ပါ။ ပင်မရဲ့ ပေးရန်/ရရန်ကနေလည်း ဝင်နိုင်သည်။</li>
+<li><strong>ငွေရှင်းရန်</strong> ကိုနှိပ်ပါ။ ပေးသူ၊ လက်ခံသူနှင့် ငွေကြေးကို စစ်ပါ။</li>
+<li>တကယ်ပေးခဲ့သည့်ပမာဏကို ဖြည့်ပါ။ အပြည့်မဟုတ်ဘဲ တစ်စိတ်တစ်ပိုင်းလည်း မှတ်နိုင်သည်။</li>
+<li>တကယ်ငွေရှင်းခဲ့သော ရက်စွဲ၊ note နဲ့ ကိုယ့် wallet ပါဝင်လျှင် wallet ကို ရွေးပါ။ Group နှင့် မိတ်ဆွေတစ်ဦးချင်း ငွေရှင်း form နှစ်ခုစလုံးမှာ ရက်စွဲရွေးနိုင်သည်။</li>
+<li>သိမ်းပါ။ ဒါဟာ အကြွေးရှင်းခြင်းဖြစ်ပြီး expense/income အသစ် မဟုတ်ပါ။ App က အမှန်တကယ်ငွေလွှဲပေးခြင်း မလုပ်ပါ။</li>
+</ol>
+<div class="table-wrap"><table><tr><th>မူလအခြေအနေ</th><th>တကယ်ရှင်းခဲ့တာ</th><th>ရလဒ်</th></tr><tr><td>ကိုယ်က ၃၀ ပေးရန်</td><td>ကိုယ် ၂၀ ပေး</td><td>၁၀ ပေးရန်ကျန်</td></tr><tr><td>ကိုယ်က ၃၀ ပေးရန်</td><td>ကိုယ် ၃၀ ပေး</td><td>အပြည့်ရှင်းပြီး</td></tr><tr><td>ကိုယ်က ၃၀ ပေးရန်</td><td>ကိုယ် ၅၀ ပေး</td><td>တစ်ဖက်ဆီက ၂၀ ပြန်ရရန်</td></tr><tr><td>တစ်ဖက်က ကိုယ့်ကို ၃၀ ပေးရန်</td><td>သူက ၅၀ ပေးလာ</td><td>ကိုယ်က သူ့ကို ၂၀ ပြန်ပေးရန်</td></tr></table></div>
+<p>ပိုပေးထားတာကို ကြိုပေးငွေ/credit သဘော ဖတ်နိုင်သည်။ ရန်ပုံငွေလက်ကျန်တစ်ခုအဖြစ် သီးခြားဖန်တီးခြင်း မဟုတ်ပါ။ ပေးသူနဲ့ လက်ခံသူ ပြောင်းပြန်မဖြစ်အောင် အထူးစစ်ပါ။</p>
+<p><strong>Common fund အကြောင်း။</strong> လူတိုင်းစုထားသော အများသုံးရန်ပုံငွေကို သီးသန့်စုငွေဝင်/ရန်ပုံငွေမှသုံး/ပိုငွေပြန်အမ်း စနစ်အဖြစ် လက်ရှိ build မှာ မထည့်ထားသေးပါ။ လူတစ်ဦးထံ စုထည့်ငွေကို group income အဖြစ် တန်းမှတ်ခြင်းက စာရင်းအဓိပ္ပာယ်မမှန်နိုင်ပါ။</p>
+</section>
+<section id="section-13"><h2>၁၃။ ကိုယ့်စာရင်းရှင်းတမ်းကို Export ထုတ်ရန်</h2>
+<div class="screens">
+<figure><a href="/assets/user-guide/18-reports.png" target="_blank"><img src="/assets/user-guide/18-reports.png" alt="စာရင်းရှင်းတမ်း — ကာလနှင့် export ခလုတ်များ" loading="lazy" width="440" height="956"></a><figcaption>စာရင်းရှင်းတမ်း — ကာလနှင့် export ခလုတ်များ</figcaption></figure>
+</div>
+<ol>
+<li><strong>စီမံရန် → စာရင်းရှင်းတမ်း</strong> သို့သွားပါ။ ပင်မရဲ့ report icon ကနေလည်း ဖွင့်နိုင်သည်။</li>
+<li>ကာလရွေးသည့်နေရာမှာ ဒီလ၊ နှစ်၊ လအပိုင်းအခြား သို့မဟုတ် ရက်အပိုင်းအခြားကို ရွေးပါ။</li>
+<li>ငွေကြေးအလိုက် ဝင်ငွေ၊ သုံးငွေ၊ လက်ကျန်နဲ့ category စာရင်းတွေကို စစ်ပါ။ Shared expense တွေမှာ ကိုယ့်ဝေစုကို အဓိကဖတ်ပါ။</li>
+<li>အပေါ်က <strong>ထုတ်ယူရန် → Excel</strong> ကိုနှိပ်ပြီး ရွေးထားသည့်ကာလကို <code>.xlsx</code> အဖြစ်ထုတ်ပါ။</li>
+<li>ဖုန်းရဲ့ share sheet မှာ Files ထဲသိမ်းရန် သို့မဟုတ် ပို့မည့် app ကို ရွေးပါ။</li>
+</ol>
+<p>Excel မှာ Summary၊ Transactions၊ By month စာရွက်များပါသည်။ Data ရှိသည့်အခါ Remittances နဲ့ Budgets စာရွက်များလည်း ပါနိုင်သည်။ ထုတ်ယူရန် menu ထဲက PDF က summary ကို ဖတ်ရလွယ်သည့် PDF အဖြစ်ထုတ်ပြီး CSV က transaction rows ကို ထုတ်သည်။ ဖိုင်တစ်ခုချင်းစီရဲ့ပါဝင်ပုံ မတူပါ။</p>
+<p>ကာလထဲမှာ data မရှိလျှင် ကာလနဲ့ currency ကို ပြန်စစ်ပါ။ Report export က backup အစား မဟုတ်ပါ။ Backup မှသာ app ရဲ့ data ကို ပြန်သွင်းနိုင်သည်။</p>
+</section>
+<section id="section-14"><h2>၁၄။ Group စာရင်းရှင်းတမ်းကို Export ထုတ်ရန်</h2>
+<div class="screens">
+<figure><a href="/assets/user-guide/19-group-export.png" target="_blank"><img src="/assets/user-guide/19-group-export.png" alt="Group menu — PDF နှင့် Excel ထုတ်ရန်" loading="lazy" width="440" height="956"></a><figcaption>Group menu — PDF နှင့် Excel ထုတ်ရန်</figcaption></figure>
+</div>
+<ol>
+<li><strong>အဖွဲ့များ → လိုချင်သော Group</strong> ကိုဖွင့်ပါ။</li>
+<li>အပေါ်ညာဘက် <strong>⋮</strong> menu ကိုနှိပ်ပါ။</li>
+<li><strong>Export as Excel / Excel ထုတ်ရန်</strong> ကို ရွေးပါ။</li>
+<li>Share sheet ကနေ Files ထဲ သိမ်းပါ သို့မဟုတ် ပို့ပါ။</li>
+</ol>
+<p>လက်ရှိ group Excel က ထို group တစ်ခုလုံးကို ထုတ်ပေးသည်။ Summary၊ By category၊ Members၊ Balances၊ Transactions နဲ့ Payments စုစုပေါင်း စာရွက် ၆ ခုပါသည်။ Member တစ်ဦးစီ၏စိုက်ငွေ၊ ဝေစု၊ ဝင်ငွေဝေစုနဲ့ ရှင်းပြီးငွေများကို ကြည့်နိုင်သည်။ Currency မတူသည့်ပမာဏများကို သီးခြားထားသည်။</p>
+<p>Group ထဲက တခြား tab ရဲ့ filter သို့မဟုတ် ကိုယ့် report ကာလကို လက်ရှိ group export က မယူပါ။ Group အပြည့်အစုံထုတ်ခြင်းဖြစ်သည်။ Group PDF လိုလျှင် အလားတူ menu ထဲက PDF ကို ရွေးပါ။</p>
+</section>
+<section id="section-15"><h2>၁၅။ မှတ်တမ်း၊ Search နှင့် Pagination</h2>
+<div class="screens">
+<figure><a href="/assets/user-guide/24-activity.png" target="_blank"><img src="/assets/user-guide/24-activity.png" alt="မှတ်တမ်း — ကာလ၊ အမျိုးအစားနှင့် search" loading="lazy" width="440" height="956"></a><figcaption>မှတ်တမ်း — ကာလ၊ အမျိုးအစားနှင့် search</figcaption></figure>
+<figure><a href="/assets/user-guide/24b-activity-more.png" target="_blank"><img src="/assets/user-guide/24b-activity-more.png" alt="မှတ်တမ်းအောက်ဆုံး — နောက်ထပ်ကြည့်ရန်" loading="lazy" width="440" height="956"></a><figcaption>မှတ်တမ်းအောက်ဆုံး — နောက်ထပ်ကြည့်ရန်</figcaption></figure>
+</div>
+<ol>
+<li>အောက် navigation ရဲ့ <strong>မှတ်တမ်း</strong> ကိုနှိပ်ပါ။</li>
+<li>Default က ဒီလအပါအဝင် <strong>နောက်ဆုံး ၃ လ</strong> ဖြစ်သည်။ လိုလျှင် ဒီလ၊ ဒီနှစ် သို့မဟုတ် ရက်အပိုင်းအခြားကို ပြောင်းပါ။</li>
+<li>အသုံးစရိတ်၊ ဝင်ငွေ၊ ငွေရှင်း၊ ပြင်ဆင်မှု၊ အဖွဲ့ဝင် စသည့် chip များဖြင့် စစ်ထုတ်ပါ။ Search မှာ ပေါ်နေသည့်စာကြောင်း သို့မဟုတ် group အမည်နဲ့ ရှာနိုင်သည်။</li>
+<li>တစ်ကြိမ် <strong>၃၀ ကြောင်း</strong> ပြသည်။ အောက်ဆုံး <strong>နောက်ထပ်ကြည့်ရန်</strong> နှိပ်ပြီး ဆက်ကြည့်ပါ။</li>
+<li>Search၊ filter သို့မဟုတ် ကာလပြောင်းလျှင် ပထမ ၃၀ ကြောင်းကနေ ပြန်စသည်။ အရေအတွက်က လက်ရှိပြထားသမျှတင် မဟုတ်ဘဲ filter နဲ့ကိုက်သည့်ကာလအပြည့်ကို ဆိုလိုသည်။</li>
+</ol>
+<p>မှတ်တမ်းမှာ entry မတွေ့ရင် ကာလနဲ့ filter ကို စစ်ပါ။ မှတ်တမ်း tab သည် “ဘယ်သူ ဘာလုပ်ခဲ့လဲ” ဆိုသည့် activity ဖြစ်ပြီး ငွေအဝင်အထွက်အားလုံးကို ပြင်ရန်စာရင်းနဲ့ မတူပါ။ စာရင်းတစ်ကြောင်းကို ပြင်လိုလျှင် <strong>စီမံရန် → ငွေအဝင်အထွက်အားလုံး</strong> မှာ ဖွင့်ပါ။ Group စာရင်းကို group ရဲ့အသုံးစရိတ် tab ကနေလည်း ဖွင့်နိုင်သည်။</p>
+</section>
+<section id="section-16"><h2>၁၆။ Settings ကို ပြင်ရန်</h2>
+<div class="screens">
+<figure><a href="/assets/user-guide/20-settings.png" target="_blank"><img src="/assets/user-guide/20-settings.png" alt="စီမံရန်နှင့် Settings အစပိုင်း" loading="lazy" width="440" height="956"></a><figcaption>စီမံရန်နှင့် Settings အစပိုင်း</figcaption></figure>
+<figure><a href="/assets/user-guide/21-settings-preferences.png" target="_blank"><img src="/assets/user-guide/21-settings-preferences.png" alt="စီမံရန် — Wallet၊ မိတ်ဆွေ၊ Category၊ Reports" loading="lazy" width="440" height="956"></a><figcaption>စီမံရန် — Wallet၊ မိတ်ဆွေ၊ Category၊ Reports</figcaption></figure>
+<figure><a href="/assets/user-guide/28-category-rename.png" target="_blank"><img src="/assets/user-guide/28-category-rename.png" alt="Category အမည်ပြင်ရန် — border ပါသော textbox များ" loading="lazy" width="440" height="956"></a><figcaption>Category အမည်ပြင်ရန် — border ပါသော textbox များ</figcaption></figure>
+</div>
+<p><strong>စီမံရန်</strong> ကိုဖွင့်ပြီး အောက်ကို scroll လုပ်ပါ။</p>
+<div class="table-wrap"><table><tr><th>Setting</th><th>အသုံးပြုပုံ</th></tr><tr><td>ဘာသာစကား</td><td>မြန်မာ / English ပြောင်းရန်</td></tr><tr><td>ပုံစံ / Appearance</td><td>Light၊ Dark သို့မဟုတ် System အလိုက် ရွေးရန်</td></tr><tr><td>ဂဏန်းပုံစံ</td><td>မြန်မာဂဏန်း / Latin ဂဏန်းဖြင့် ပြရန်</td></tr><tr><td>အဓိကငွေကြေး</td><td>စာရင်းအသစ်အတွက် default currency ရွေးရန်</td></tr><tr><td>ခွဲဝေမှု ပုံစံ</td><td>စာရင်းအသစ်အတွက် default split method ရွေးရန်</td></tr><tr><td>မူလ Wallet</td><td>ကိုက်ညီသော currency ရှိလျှင် စာရင်းအသစ်မှာ အရင်ရွေးပေးရန်</td></tr><tr><td>အက်ပ် သော့ခတ်ခြင်း</td><td>ဖုန်း၏ lock သို့မဟုတ် PIN ဖြင့် app ဖွင့်ခွင့်ကာကွယ်ရန်</td></tr></table></div>
+<p>Main currency ပြောင်းတာက ရှိပြီးသား SGD စာရင်းကို MYR အဖြစ် ပြောင်းပေးခြင်း မဟုတ်ပါ။ Default settings တွေက ရှိပြီးသား saved record ကို အလိုအလျောက် ပြန်ရေးမပေးပါ။ Group မှာ ကိုယ်ပိုင် currency/split default ရှိနိုင်ပြီး transaction တစ်ခုချင်းမှာလည်း ပြန်ရွေးနိုင်သည်။</p>
+<p><strong>စီမံရန်</strong> အောက်မှာ Wallet၊ မိတ်ဆွေများ၊ အမျိုးအစားများ၊ ပတ်စဉ်/လစဉ်ထပ်ဖြစ်သော မှတ်တမ်းများ၊ ငွေအဝင်အထွက်အားလုံးနှင့် စာရင်းရှင်းတမ်းတို့ကို ဖွင့်နိုင်သည်။</p>
+</section>
+<section id="section-17"><h2>၁၇။ Backup နှင့် App lock</h2>
+<div class="screens">
+<figure><a href="/assets/user-guide/22-backup.png" target="_blank"><img src="/assets/user-guide/22-backup.png" alt="Backup ပြုလုပ်ရန်နှင့် ပြန်သွင်းရန်" loading="lazy" width="440" height="956"></a><figcaption>Backup ပြုလုပ်ရန်နှင့် ပြန်သွင်းရန်</figcaption></figure>
+<figure><a href="/assets/user-guide/23-app-lock.png" target="_blank"><img src="/assets/user-guide/23-app-lock.png" alt="App lock ရွေးချယ်မှု" loading="lazy" width="440" height="956"></a><figcaption>App lock ရွေးချယ်မှု</figcaption></figure>
+</div>
+<p><strong>Backup လုပ်ရန်</strong></p>
+<ol>
+<li><strong>စီမံရန် → Backup</strong> ကိုသွားပါ။ Local-only build မှာ အပေါ်ပိုင်းတွင် တွေ့နိုင်သည်။</li>
+<li>Backup လုပ်ရန်ကို နှိပ်ပါ။</li>
+<li>Share sheet ပေါ်လာလျှင် Files သို့မဟုတ် မိမိသိမ်းလိုသည့်နေရာကို ရွေးပြီး ဖိုင်သိမ်းပါ။</li>
+<li>ပြန်သွင်းရန်လိုလျှင် <strong>Restore / ပြန်သွင်းရန်</strong> မှာ backup ဖိုင်ကို ရွေးပြီး preview အချက်အလက်ကို စစ်ကာ အတည်ပြုပါ။</li>
+</ol>
+<p>Local-only app မှာ data က ဒီဖုန်းထဲတွင်ရှိသည်။ ဖုန်းပြောင်းမည့်အချိန်၊ app ဖျက်မည့်အချိန်မတိုင်ခင် backup သိမ်းထားပါ။ Restore မလုပ်မီ လက်ရှိ data ကိုပါ backup ယူထားပါ။ Excel/PDF ဖိုင်ကို backup restore အတွက် မသုံးနိုင်ပါ။</p>
+<p><strong>App lock သုံးရန်</strong></p>
+<ol>
+<li><strong>စီမံရန် → အက်ပ် သော့ခတ်ခြင်း</strong> ကိုဖွင့်ပါ။</li>
+<li>ဖုန်း lock သို့မဟုတ် PIN ကို ရွေးပါ။ ဖုန်း၏ setup/ပံ့ပိုးမှုအလိုက် options ကွာနိုင်သည်။</li>
+<li>PIN ရွေးလျှင် သတ်မှတ်ပြီး အတည်ပြုပါ။</li>
+<li>App lock က ဒီဖုန်းပေါ်က app ဝင်ကြည့်မှုကို ကာကွယ်သည်။ Export လုပ်ပြီးသား Excel/PDF ဖိုင်များကိုတော့ app lock နဲ့ မကာကွယ်ပါ။</li>
+</ol>
+</section>
+<section id="section-18"><h2>၁၈။ နေ့စဉ်သုံးရန် အတိုချုပ် ဥပမာ</h2>
+<p><strong>အခြေအနေ — ကိုယ်က SGD ၉၀ ညစာရှင်းပြီး လူ ၃ ယောက် ခွဲမည်။</strong></p>
+<ol>
+<li>+ → အသုံးစရိတ် → SGD ၉၀ → အကြောင်းအရာ <code>သူငယ်ချင်းများနှင့် ညစာ</code> → အစားအသောက် category ရွေးပါ။</li>
+<li>Date ကို ရွေး၊ တကယ်ပေးသည့် SGD wallet ကို ချိတ်ပါ။</li>
+<li>အတူ → မြသီတာ၊ ကိုကို → ခွဲမည် → ငွေစိုက်သူ ကိုယ် → အညီအမျှ → သိမ်းပါ။</li>
+<li>ကိုယ့်အသုံးစရိတ်ဝေစု ၃၀၊ တစ်ဦးစီဆီက ၃၀ စီ ရရန်ဖြစ်သည်။ ကိုယ့်ငွေကတော့ အဲဒီနေ့ ၉၀ အပြည့်ထွက်ခဲ့သည်။</li>
+<li>မြသီတာက ၃၀ ပြန်ပေးလာလျှင် မိတ်ဆွေများ → မြသီတာ → ငွေရှင်းရန်မှာ <strong>လက်ခံရငွေ ၃၀</strong> မှတ်ပါ။ ထိုအကြွေး သုညဖြစ်မည်။ Wallet ထဲဝင်တာကို မှတ်လိုလျှင် လက်ခံသည့် wallet ပါရွေးပါ။</li>
+<li>လကုန်မှာ စာရင်းရှင်းတမ်း → ကာလရွေး → Excel ထုတ်ပါ။ ပြီးလျှင် backup ဖိုင်ကိုပါ သိမ်းပါ။</li>
+</ol>
+<p><strong>အသုံးမပြုမီ စစ်ရန် ၅ ချက်။</strong> ငွေကြေးမှန်လား၊ ပမာဏမှန်လား၊ ရက်စွဲမှန်လား၊ ငွေစိုက်သူ/လက်ခံသူမှန်လား၊ ဝေစုမှန်လား။ ဒီငါးချက်ကို စစ်ပြီးမှ သိမ်းပါ။</p>
+<p>မသိမ်းရသေးသည့် စာရင်းပြင်ဆင်မှုနှင့်အတူ ထွက်လျှင် ဆက်ပြင်မည် သို့မဟုတ် မသိမ်းဘဲထွက်မည်ကို ရွေးနိုင်သည်။ Save မအောင်မြင်ပါက ဖြည့်ထားသည့်အချက်များကို ဆက်ထိန်းထားပြီး ပြန်သိမ်းနိုင်သည်။ Error/warning message ကို ပိတ်ခလုတ်ဖြင့် ပိတ်နိုင်သည်။</p>
+</section></main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top:none; padding-top:0;">
+        <p>© Bagan Byte. All rights reserved.</p>
+        <div class="footer-legal-links">
+          <a href="/user-guide/" class="footer-link"><span class="lang-en">User Guide</span><span class="lang-my">အသုံးပြုနည်း</span></a><span>·</span>
+          <a href="/" class="footer-link">Home</a>
+          <span>·</span>
+          <a href="/privacy-policy/" class="footer-link">Privacy Policy</a>
+          <span>·</span>
+          <a href="https://baganbyte.com" target="_blank" rel="noopener noreferrer" class="footer-link">baganbyte.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

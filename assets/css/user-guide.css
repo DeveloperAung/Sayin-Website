@@ -1,0 +1,30 @@
+@font-face{font-family:GuideMyanmar;src:url('/assets/user-guide/NotoSansMyanmar-Regular.ttf') format('truetype');font-display:swap}
+@font-face{font-family:GuideMyanmar;src:url('/assets/user-guide/NotoSansMyanmar-Bold.ttf') format('truetype');font-weight:700;font-display:swap}
+.user-guide{max-width:1080px;margin:0 auto;padding:48px 28px 80px;font-family:GuideMyanmar,var(--font-burmese);font-size:16px;line-height:1.95;overflow-wrap:anywhere}
+.user-guide .guide-intro{padding:40px;border:1px solid var(--hairline-gold);border-radius:var(--radius-xl);background:var(--bg-secondary);margin-bottom:28px}
+.user-guide h1{font-size:30px;line-height:1.7;margin:12px 0}
+.user-guide h2{font-size:23px;line-height:1.8;margin:0 0 20px;padding-bottom:16px;border-bottom:1px solid var(--hairline-gold)}
+.user-guide .eyebrow{font-family:var(--font-latin);letter-spacing:2px;font-size:12px;color:var(--accent-gold)}
+.user-guide p{margin:16px 0}
+.user-guide button{background:var(--accent-gold);color:var(--text-inverse);border:0;border-radius:24px;padding:12px 20px;font:inherit;cursor:pointer}
+.user-guide .guide-language-note{font-size:13px;color:var(--text-muted);margin-bottom:0}
+.user-guide .guide-toc{background:var(--bg-card);border:1px solid var(--hairline-subtle);border-radius:var(--radius-lg);padding:28px;margin:24px 0 32px;columns:2;column-gap:32px}
+.user-guide .guide-toc h2{column-span:all}
+.user-guide a{color:var(--accent-gold);text-decoration:underline;text-underline-offset:4px}
+.user-guide .guide-toc a{display:block;margin-bottom:14px;break-inside:avoid;font-size:14px}
+.user-guide section{padding:32px;background:var(--bg-card);border:1px solid var(--hairline-subtle);border-radius:var(--radius-lg);margin-bottom:26px;scroll-margin-top:96px}
+.user-guide ol{padding-left:30px;list-style:decimal}
+.user-guide li{padding:7px 0 7px 8px}
+.user-guide strong{font-weight:700;color:var(--text-primary)}
+.user-guide code{font:inherit;background:var(--bg-secondary);padding:2px 5px;border-radius:4px}
+.user-guide .screens{display:flex;gap:20px;flex-wrap:wrap;align-items:flex-start;justify-content:center;padding:12px 0 20px}
+.user-guide figure{margin:0;max-width:280px;min-width:0;flex:1 1 230px}
+.user-guide figure img{width:100%;height:auto;border:1px solid var(--hairline-subtle);border-radius:16px;box-shadow:var(--shadow-sm)}
+.user-guide figcaption{font-size:12px;color:var(--text-muted);padding:10px 4px;line-height:1.8}
+.user-guide .table-wrap{overflow:auto;margin:24px 0}
+.user-guide table{border-collapse:collapse;width:100%;font-size:14px}
+.user-guide th{background:var(--bg-elevated);text-align:left}
+.user-guide td,.user-guide th{border:1px solid var(--hairline-subtle);padding:13px;vertical-align:top}
+.user-guide tr:nth-child(odd) td{background:var(--bg-secondary)}
+@media(max-width:650px){.user-guide{padding:24px 12px 40px;font-size:15px}.user-guide .guide-intro{padding:26px 20px}.user-guide h1{font-size:25px}.user-guide h2{font-size:21px}.user-guide section{padding:22px 18px}.user-guide .guide-toc{columns:1;padding:22px}.user-guide figure{max-width:300px}}
+@media print{.site-header,.site-footer,.user-guide button,.guide-language-note{display:none!important}.user-guide{max-width:none;padding:0;font-size:11px;color:#172f29}.user-guide .guide-intro,.user-guide section,.user-guide .guide-toc,.user-guide td,.user-guide th{background:white;color:#172f29;border-color:#ccc}.user-guide section{padding:14px 0;border:0;break-before:page}.user-guide strong,.user-guide a{color:inherit}.user-guide h2{break-after:avoid}.user-guide figure{max-width:190px;break-inside:avoid}.user-guide figure img{box-shadow:none}.user-guide p,.user-guide li{orphans:3;widows:3}}

@@ -19,6 +19,8 @@ Each page is an `index.html` inside its own directory so GitHub Pages serves cle
 │   └── index.html            # Privacy Policy (supports #my anchor)
 ├── privacy/
 │   └── index.html            # Automatic redirect to /privacy-policy preserving hash
+├── user-guide/
+│   └── index.html            # Burmese user guide with contents and screenshots
 ├── support/
 │   └── index.html            # Support contacts & user feedback guide
 ├── assets/
@@ -83,3 +85,7 @@ Recommended aspect ratio: iPhone screen (e.g., 390x844 or 1179x2556).
 ## License
 
 © Bagan Byte. All rights reserved.
+
+## User guide
+
+The `/user-guide/` page contains the Burmese guide from `../sayin/docs/user-guide/USER_GUIDE_MY.md`, with screenshots and Myanmar fonts in `assets/user-guide/`. The guide is static HTML and works with both direct GitHub Pages hosting and the Vite build. When updating it, use the Markdown source as the reference; its content may be newer than the exported standalone HTML.

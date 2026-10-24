@@ -1159,7 +1159,7 @@ img, svg {
   }
 }
 
-@media (max-width: 880px) {
+@media (max-width: 1120px) {
   .nav-links {
     display: none !important;
   }
