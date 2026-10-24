@@ -28,3 +28,6 @@
 .user-guide tr:nth-child(odd) td{background:var(--bg-secondary)}
 @media(max-width:650px){.user-guide{padding:24px 12px 40px;font-size:15px}.user-guide .guide-intro{padding:26px 20px}.user-guide h1{font-size:25px}.user-guide h2{font-size:21px}.user-guide section{padding:22px 18px}.user-guide .guide-toc{columns:1;padding:22px}.user-guide figure{max-width:300px}}
 @media print{.site-header,.site-footer,.user-guide button,.guide-language-note{display:none!important}.user-guide{max-width:none;padding:0;font-size:11px;color:#172f29}.user-guide .guide-intro,.user-guide section,.user-guide .guide-toc,.user-guide td,.user-guide th{background:white;color:#172f29;border-color:#ccc}.user-guide section{padding:14px 0;border:0;break-before:page}.user-guide strong,.user-guide a{color:inherit}.user-guide h2{break-after:avoid}.user-guide figure{max-width:190px;break-inside:avoid}.user-guide figure img{box-shadow:none}.user-guide p,.user-guide li{orphans:3;widows:3}}
+
+.user-guide [lang="en"]{font-family:var(--font-latin);line-height:1.85}
+.user-guide [lang="my"]{font-family:GuideMyanmar,var(--font-burmese)}
