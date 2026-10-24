@@ -89,3 +89,7 @@ Recommended aspect ratio: iPhone screen (e.g., 390x844 or 1179x2556).
 ## User guide
 
 The `/user-guide/` page contains the Burmese guide from `../sayin/docs/user-guide/USER_GUIDE_MY.md`, with screenshots and Myanmar fonts in `assets/user-guide/`. The guide is static HTML and works with both direct GitHub Pages hosting and the Vite build. When updating it, use the Markdown source as the reference; its content may be newer than the exported standalone HTML.
+
+## Android APK download
+
+The Android button currently downloads `/assets/downloads/sayin-android.apk` directly. To update the release, replace that file with the new release APK. The existing build copies `assets/` into `dist/assets/`; direct GitHub Pages hosting serves it from the same URL.
