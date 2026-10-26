@@ -10,6 +10,7 @@ export default defineConfig(() => {
           privacyPolicy: path.resolve(__dirname, 'privacy-policy/index.html'),
           privacy: path.resolve(__dirname, 'privacy/index.html'),
           userGuide: path.resolve(__dirname, 'user-guide/index.html'),
+          news: path.resolve(__dirname, 'news/index.html'),
           support: path.resolve(__dirname, 'support/index.html'),
           notFound: path.resolve(__dirname, '404.html'),
         },

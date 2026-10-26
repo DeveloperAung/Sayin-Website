@@ -21,6 +21,8 @@ Each page is an `index.html` inside its own directory so GitHub Pages serves cle
 │   └── index.html            # Automatic redirect to /privacy-policy preserving hash
 ├── user-guide/
 │   └── index.html            # English / Burmese user guide with contents and screenshots
+├── news/
+│   └── index.html            # News & Updates (release notes, EN/MY)
 ├── support/
 │   └── index.html            # Support contacts & user feedback guide
 ├── assets/
